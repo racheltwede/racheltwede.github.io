@@ -1,3 +1,3 @@
 let currentDate = new Date;
 document.querySelector("#currentYear").innerHTML = currentDate.getFullYear();
-document.getElementById("lastModified").innerHTML = document.lastModified;
+document.querySelector("#lastUpdated").innerHTML = document.lastModified;

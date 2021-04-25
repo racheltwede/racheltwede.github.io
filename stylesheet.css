@@ -1,18 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@400;700;900&display=swap');
+
 body {
     background-color: #E0B184;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
 }
 
 #portal-content {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1100px;
     box-shadow: -0.6rem 1.1rem 0.9rem #2b170d94;
+}
+
+h1 {
+    font-family: "Kaushan Script", serif;
+    font-size: 55px;
 }
 
 #portal-header, #portal-footer {
     background-color: #2B170D;
-    padding: 1.2rem 2.5rem;
-    color: #F9DBB5;
+    color: #FFEFC7;
+}
+
+#portal-header {
+    padding: 1rem 3.5rem;
+}
+
+#portal-footer {
+    padding: 2rem 3.5rem;
 }
 
 #portal-footer p {
@@ -22,6 +37,14 @@ body {
 #portal-main {
     background-color: white;
     padding: 1.4rem 3.5rem 4rem 4.5rem;
+}
+
+#portal-main ul {
+    padding-left: 3.5rem;
+}
+
+h2 {
+    font-weight: 900;
 }
 
 a:link {
