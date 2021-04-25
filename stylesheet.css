@@ -1,0 +1,43 @@
+body {
+    background-color: #E0B184;
+    font-size: 17px;
+}
+
+#portal-content {
+    margin: 0 auto;
+    max-width: 960px;
+    box-shadow: -0.6rem 1.1rem 0.9rem #2b170d94;
+}
+
+#portal-header, #portal-footer {
+    background-color: #2B170D;
+    padding: 1.2rem 2.5rem;
+    color: #F9DBB5;
+}
+
+#portal-footer p {
+    margin-top: 0.5rem;
+}
+
+#portal-main {
+    background-color: white;
+    padding: 1.4rem 3.5rem 4rem 4.5rem;
+}
+
+a:link {
+    color: #93693E;
+}
+  
+a:visited {
+    color: #A6945D;
+}
+
+a:hover {
+    color: #E0B184;
+}
+
+#portal-img {
+    max-width: 325px;
+    float: right;
+    margin: 1.5rem 0rem 0rem 0rem;
+}
