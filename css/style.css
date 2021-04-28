@@ -47,15 +47,27 @@ h2 {
     font-weight: 900;
 }
 
-a:link {
-    color: #93693E;
+main a:link {
+    color: #9E6A3A;
 }
   
-a:visited {
-    color: #A6945D;
+main a:visited {
+    color: #684627;
 }
 
-a:hover {
+main a:hover {
+    color: #E0B184;
+}
+
+footer a:link {
+    color: #B5B27D;
+}
+  
+footer a:visited {
+    color: #8E8B52;
+}
+
+footer a:hover {
     color: #E0B184;
 }
 
