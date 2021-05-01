@@ -7,12 +7,12 @@ body {
 #portal-content {
     margin: 0 auto;
     max-width: 1100px;
-    box-shadow: -0.6rem 1.1rem 0.9rem #2b170d94;
 }
 
 h1 {
     font-family: "Kaushan Script", serif;
     font-size: 55px;
+    padding-right: 1em;
 }
 
 #portal-header, #portal-footer {
@@ -30,6 +30,11 @@ h1 {
 
 #portal-footer p {
     margin-top: 0.5rem;
+}
+
+#portal-img {
+    max-width: 325px;
+    margin: 1.5rem 0rem 0rem 0rem;
 }
 
 #portal-main {
@@ -69,8 +74,3 @@ footer a:hover {
     color: #E0B184;
 }
 
-#portal-img {
-    max-width: 325px;
-    float: right;
-    margin: 1.5rem 0rem 0rem 0rem;
-}
