@@ -2,6 +2,10 @@
     max-width: 17rem;
 }
 
+#site-name {
+    font-weight: bold;
+}
+
 
 
 @media only screen and (min-width: 32em) {}
