@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 32em) {
     #portal-content {
         box-shadow: -0.6rem 1.1rem 0.9rem #2b170d94;
     }
@@ -8,3 +8,4 @@
         margin: 1.5rem 0rem 0rem 0rem;
     }
 }
+/*80 em for the large css file*/
