@@ -68,6 +68,14 @@ h2 + p {
     max-width: 85%;
 }
 
+/****************************************************
+Colors and typography for Weather Site
+*/
+#weather-h1 {
+    background-color: #7ADD53;
+    color: #25291C;
+    padding: 2rem;
+}
 
 /*medium*/
 @media only screen and (min-width: 32em) {
