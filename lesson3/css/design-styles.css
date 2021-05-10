@@ -1,14 +1,13 @@
 body {
-    background-color: #8AB9B5;
+    background-color: #7db9b4;
     padding: 0;
-}
-
-header, .weather-nav, main, footer {
+    max-width: 70rem;
+    margin: 0 auto;
     font-family: "Lato", sans-serif;
     font-size: 17px;
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 875px;
+}
+header, .design-doc-nav, main, footer {
+    padding: 0.75rem 2rem;
     background-color: white;
 }
 
@@ -16,27 +15,18 @@ h2 + p {
     line-height: 1.3em;
 }
 
-.weather-nav {
+.design-doc-nav {
     background-color: #1D798A;
     text-align: center;
     padding: 0;
 }
-.weather-nav ul{
+.design-doc-nav ul{
     list-style-type: none;
     padding: 0;
     overflow: hidden;
     margin: 0 auto;
 }
-
-.sample-nav ul {
-    list-style-type: none;
-    max-width: 400px;
-}
-.sample-nav ul li a {
-    text-decoration: none;
-}
-
-.weather-nav ul li a {
+.design-doc-nav ul li a {
     display: block;
     text-align: center;
     color: white;
@@ -47,71 +37,125 @@ h2 + p {
 .current-page {
     background-color: #B0CFCD;
 }
-
 .current-page:link {
     color: #2B4141;
 }
 .current-page:visited {
     color: #2B4141;
 }
-
-.current-page:hover, .weather-nav ul li a:hover {
+.current-page:hover, .design-doc-nav ul li a:hover {
     background-color: #0EB1D2;
     color: white;
 }
 
 #site-name {
-    font-weight: bold;
+    font-style: italic;
 }
 
 #plan-logo {
     max-width: 85%;
 }
 
+footer a:link {
+    color: #1D798A;
+}
+footer a:visited {
+    color: #372f55;
+}
+footer a:hover {
+    color: #0EB1D2;
+}
+
+
 /****************************************************
 Colors and typography for Weather Site
 */
+.color-container {
+    display: grid;
+}
+.color-container div {
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+
+    padding: 1rem;
+    text-align: center;
+}
+#color-div-1 {
+    background-color: #26A6D1;
+}
+#color-div-2 {
+    background-color: #033E63;
+    color: #DFEDF2;
+}
+#color-div-3 {
+    background-color: #5B8A19;
+}
+#color-div-4 {
+    background-color: #464E18;
+}
+#color-div-5 {
+    background-color: #070C0D;
+    color: white;
+}
+#color-div-6 {
+    background-color: #DFEDF2;
+}
+
 #weather-h1 {
-    background-color: #7ADD53;
-    color: #25291C;
-    padding: 2rem;
+    background-color: #26A6D1;
+    color: #070C0D;
+    padding: 0.5em;
+}
+#weather-h1-dark-bg{
+    background-color: #033E63;
+    color: #DFEDF2;
+    padding: 0.5em;
+}
+#weather-h2 {
+    color: #464E18;
+    padding: 0.5em 0em;
+}
+#weather-h2-dark-bg{
+    background-color: #464E18;
+    color: white;
+    padding: 0.5em;
+}
+#weather-p {
+    color: #070C0D;
+    padding: 1em 0em;
+}
+#weather-p-dark-bg {
+    background-color: #033E63;
+    color: #DFEDF2;
+    padding: 1em;
+}
+#weather-link:link {
+    color: #26A6D1;
+}
+#weather-link:visited {
+    color: #033E63;
+}
+#weather-link:hover {
+    color: #5B8A19;
+}
+#weather-link:active {
+    color: #464E18;
 }
 
-/*medium*/
-@media only screen and (min-width: 32em) {
-    header, main, footer {
-        padding: 3rem;
-    }
-    .weather-nav {
-        padding: 0rem 3rem;
-    }
-    .weather-nav ul li a {
-        font-size: 1.3rem;
-    }
-    .weather-nav ul {
-        display: flex;
-    }
-    .weather-nav ul li {
-        flex: 1 1 100%;
-    }
-    #plan-logo {
-        max-width: 17rem;
-    }
-
-    .sample-nav ul li a {
-        font-size: 1.3rem;
-    }
-    .sample-nav ul {
-        display: flex;
-    }
-    .sample-nav ul li {
-        flex: 1 1 100%;
-    }
+.weather-nav ul {
+    margin-top: 3rem;
+    list-style-type: none;
+    max-width: 400px;
+    display: flex;
+    padding: 0;
 }
-
-/*large*/
-/*
-@media only screen and (min-width: 70em) {
-   
+.weather-nav ul li a {
+    text-decoration: none;
+    flex: 1 1 100%;
+    padding: 1em;
+    background-color:#26A6D1;
+    color: #070C0D;
 }
-*/
+.weather-nav ul li a:hover {
+    background-color: #DFEDF2;
+    color: #070C0D;
+}

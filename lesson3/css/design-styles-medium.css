@@ -1,0 +1,34 @@
+@media only screen and (min-width: 32em) {
+    header, main, footer {
+        padding: 1rem 3rem;
+    }
+    .design-doc-nav ul {
+        display: flex;
+    }
+    .design-doc-nav ul li {
+        flex: 1 1 100%;
+    }
+    .design-doc-nav ul li a {
+        font-size: 1.3rem;
+    }
+    #plan-logo {
+        max-width: 17rem;
+    }
+
+    .sample-nav ul li a {
+        font-size: 1.3rem;
+    }
+    .sample-nav ul {
+        display: flex;
+    }
+    .sample-nav ul li {
+        flex: 1 1 100%;
+    }
+}
+
+/*large*/
+/*
+@media only screen and (min-width: 70em) {
+   
+}
+*/
