@@ -60,11 +60,11 @@ nav {
     font-family: 'PT Sans', sans-serif;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.1rem;
-    border-top: 2px solid rgba(0, 0, 0, 0.3)
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
 }
-.location {
+#location {
     background-color: #033E63;
     color: #DFEDF2; 
 }
@@ -72,7 +72,6 @@ nav {
     background-color: #DFEDF2;
     color: black; 
 }
-
 
 main {
     margin: 0 1.5rem 1rem 1.5rem;

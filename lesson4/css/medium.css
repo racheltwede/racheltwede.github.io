@@ -25,6 +25,7 @@
     }
     .navigation ul li a {
         border-top: none;
+        font-size: 1.2rem;
     }
     
     main {
