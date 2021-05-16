@@ -1,32 +1,34 @@
 <!doctype html>
 <html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Weather and forecast for Preston, Idaho">
-  <meta name="author" content="Rachel Twede">
-  <title>Preston — The Weather Corner</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/medium.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather and forecast for Preston, Idaho">
+    <meta name="author" content="Rachel Twede">
+    <title>Preston — The Weather Corner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="images\logo-512-px.png" alt="The Weather Corner's Logo">
+        <img class="logo" src="images/logo-512-px.png" alt="The Weather Corner's Logo">
         <h1>The Weather Corner</h1>
-        <p>Weather and news for the communities of Idaho's southeast corner</p>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#">&#9776</a></li>
-                <li><a>Home</a></li>
-                <li><a>Preston</a></li>
-                <li><a>Soda Springs</a></li>
-                <li><a>Fish Haven</a></li>
-                <li><a>Storm Center</a></li>
-                <li><a>Gallery</a></li>
-            </ul>
-        </nav>
+        <p>Weather and news for Idaho's southeast corner</p>
+        <button type="button" onclick="menuDisplay()">&#9776;</button>
     </header>
+    <nav class="navigation">
+        <ul id="mainNav" class="hidden">
+            <li><a href="#">Home</a></li>
+            <li><a class="location" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
     <main>
         <h2>Preston, Idaho</h2>
         <div>Banner Image</div>
@@ -36,13 +38,16 @@
     </main>
     <footer>
         <h3>Contact Information</h3>
-        <p>placeholderemail@email.com</p>
-        <p>555-555-1234</p>
-        <a href="https://www.instagram.com/"><img></a>
-        <a href="https://www.facebook.com/"><img></a>
-        <a href="https://twitter.com/?lang=en"><img></a>
-        <img class="map" src="images\very-impressive-map.png" alt="Map of Preston, Idaho">
+        <p>&#9993; placeholderemail@email.com</p>
+        <p>&#9742; 555-555-1234</p>
+        <div class="socialMedia">
+        <a href="https://twitter.com/?lang=en"><img src="images/Twitter_Logo_WhiteOnBlue-150x150.png" alt="Twitter logo"></a>
+        <a href="https://www.instagram.com/"><img src="images/Instagram_AppIcon_Aug2017.png" alt="Instagram logo"></a>
+        <a href="https://www.facebook.com/"><img src="images/FB-f-Logo__blue_144.png" alt="Facebook logo"></a>
+    </div>
+        <img class="map" src="images/very-impressive-map.png" alt="Map of Preston, Idaho">
         <div class="footer-bar"></div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

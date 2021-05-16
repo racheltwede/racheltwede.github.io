@@ -1,2 +1,66 @@
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 42rem) {
+    header {
+        padding: 0.65rem;
+        grid-template-columns: min-content auto;
+    }
+    .logo {
+        min-width: 7.7rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    header button {
+        display: none;
+    }
+    
+
+    .navigation ul, .navigation .hidden{
+        display: flex;
+    }
+    .navigation ul li {
+        flex: 1 1 auto;
+    }
+    .navigation ul li a {
+        border-top: none;
+    }
+    
+    main {
+        margin: 0 auto 1rem auto;
+        max-width: 70%;
+    }
+    
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3rem 1.5rem 1.5rem 1.5rem auto;
+        grid-column-gap: 2rem;
+        white-space: nowrap;
+    }
+    footer h2, footer p, footer div {
+        grid-column-start: 2;
+    }
+    footer h3 {
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+    }
+    footer p {
+        margin: 0 0 0.5rem 0;    
+    }
+    footer div {
+        margin-top: 1rem;
+    }
+    footer div a {
+        display: inline-block;
+    }
+
+    .map {
+        grid-column-start: 1;
+        grid-row: 1 / -1;  
+        justify-self: end;
+        margin-left: 2rem;
+        margin-right: 0;
+    }
 }
