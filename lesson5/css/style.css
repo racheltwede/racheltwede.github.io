@@ -95,6 +95,13 @@ main div {
 main div:first-of-type {
     border-top: none;
 }
+.hero-box a img {
+    width: 100%;
+}
+.weather-overlay p {
+    margin: 0.5rem 0;
+}
+
 
 footer {
     background-color: #033E63;
