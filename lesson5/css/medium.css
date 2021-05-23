@@ -35,4 +35,15 @@
         margin: 0 auto 1rem auto;
         max-width: 85%;
     }
+    .forecast-section {
+        display: block;
+    }
+
+    .article-img {
+        float: right;
+        max-width: 23rem;
+    }
+    .article-link {
+        clear: right;
+    }
 }

@@ -6,16 +6,23 @@
         position: relative;
     }
     .weather-overlay {
+        grid-template-columns: 1fr 1fr;
         position: absolute;
         top: 15%;
         left: 4rem;
-        line-height: 1rem;
         border: 2px solid rgba(0, 0, 0, 0.3);
         padding: 0 1rem;
-        background-color: rgba(38, 166, 209, 0.7);
+        background-color: rgba(38, 166, 209, 0.95);
     }
-    .weather-overlay h2 {
-        margin: 0.75rem 0;
+    .weather-overlay h3 {
+        padding: 0.75rem 0 0.5rem 0;
+        margin: 0;
+    }
+    .weather-overlay p {
+        margin-top: 0;
+    }
+    .weather-overlay .column2 {
+        padding-left: 0.7rem;
     }
 
     footer {
@@ -25,7 +32,7 @@
         grid-column-gap: 2rem;
         white-space: nowrap;
     }
-    footer h2, footer p, footer div {
+    footer h3, footer p, footer div {
         grid-column-start: 2;
     }
     footer h3 {
