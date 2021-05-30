@@ -45,10 +45,10 @@
             <div class="weather-overlay">
                 <h3>Current Weather:</h3>
                 <p class="column1">Currently:</p> <p class="column2">Sunny</p>
-                <p class="column1">High:</p> <p class="column2">61&#176;F</p>
-                <p class="column1">Wind chill:</p> <p class="column2">n/a</p>
+                <p class="column1">High:</p> <p class="column2"><span id="temp">91</span>&#176;F</p>
+                <p class="column1">Wind chill:</p> <p class="column2"><span id="chill"></span></p>
                 <p class="column1">Humidity:</p> <p class="column2">29%</p>
-                <p class="column1">Wind speed:</p> <p class="column2">4 mph</p>
+                <p class="column1">Wind speed:</p> <p class="column2"><span id="wind">4</span> mph</p>
             </div>
         </section>
         <section class="forecast-section">
@@ -129,5 +129,6 @@
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
