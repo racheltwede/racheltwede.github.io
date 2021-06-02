@@ -1,3 +1,5 @@
+/*note: 55rem at 16px base font size = 880*/
+
 @media only screen and (min-width: 55rem) {
     main {
         max-width: 75%;

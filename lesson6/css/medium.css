@@ -1,3 +1,4 @@
+/*note: 35rem at 16px base font size = 560*/
 @media only screen and (min-width: 35rem) {
     header {
         padding: 0.65rem;
