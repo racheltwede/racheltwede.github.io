@@ -1,5 +1,6 @@
 /*note: 55rem at 16px base font size = 880*/
 
+/*general styling and preston page*/
 @media only screen and (min-width: 55rem) {
     main {
         max-width: 75%;
@@ -61,5 +62,12 @@
     .map {
        margin: 0;
        width: 100%;
+    }
+
+    /*Gallery Page*/
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
     }
 }

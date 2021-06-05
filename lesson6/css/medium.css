@@ -1,4 +1,6 @@
 /*note: 35rem at 16px base font size = 560*/
+
+/*general styling and preston page*/
 @media only screen and (min-width: 35rem) {
     header {
         padding: 0.65rem;
@@ -46,5 +48,12 @@
     }
     .article-link {
         clear: right;
+    }
+
+    /*Gallery Page*/
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
     }
 }

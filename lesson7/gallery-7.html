@@ -16,41 +16,96 @@
     <p class="event-banner">Saturday = Preston Pancakes in the Park! <br>9:00 a.m. Saturday at the city park pavilion.</p>
     <header>
         <picture class="logo-picture">
-            <!--remember to switch to the new, better outlined logo images-->
-            <source media="(min-width:325px) and (max-width:560px)" srcset="images/logo-100-px.png">
-            <source media="(min-width:560px)" srcset="images/logo-123-px.png">
-            <img class="logo" src="images/logo-56-px.png" alt="The Weather Corner's Logo">
+            <source media="(min-width:325px) and (max-width:560px)" srcset="../lesson8/images/logo-100px.png">
+            <source media="(min-width:560px)" srcset="../lesson8/images/logo-125px.png">
+            <img class="logo" src="../lesson8/images/logo-56px.png" alt="The Weather Corner's Logo">
         </picture>
         <h1>The Weather Corner</h1>
         <p>Weather and news for Idaho's southeast corner</p>
         <button type="button" onclick="menuDisplay()">&#9776;</button>
     </header>
-    <h2>Weather Gallery</h2>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
-    <picture>
-        <img src="images/placeholder-400x250.jpg" data-src="" alt="">
-    </picture>
+    <nav class="navigation">
+        <ul id="mainNav" class="hidden">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a id="location" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="gallery-main">
+        <h2>Weather Gallery</h2>
+        <section class="gallery-grid">
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/cabin-in-snowy-woods-400px.jpg" 
+                alt="A photo of a cabin in a snow-filled forest">
+                <figcaption>A snow-covered cabin in the woods near Fish Haven</figcaption>
+            </picture>
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/purple-lightning-in-the-clouds-400px.jpg" 
+                alt="A photo of bright lightning during a storm">
+                <figcaption>Lightning illuminates the sky at Soda Springs</figcaption>
+            </picture>
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/crowded-river-on-a-sunny-day-400px.jpg" 
+                alt="A photo of a river full of swimmers on a sunny day.">
+                <figcaption>Swimmers in Bear River on a hot day</figcaption>
+            </picture>
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/fog-over-the-forest-400px.jpg" 
+                alt="A photo of a forest full of fog">
+                <figcaption>A white mist rises over the woods near Preston</figcaption>
+            </picture>
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/forest-road-on-a-clear-day-400px.jpg" 
+                alt="A photo of a forest road on a clear day">
+                <figcaption>The road between Boise and Preston on a clear day</figcaption>
+            </picture>
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/golden-sun-on-a-hill-400px.jpg" 
+                alt="A photo of a hill bathed in light on a hot summer's day">
+                <figcaption>The summer heat scorches the hills in Bear Lake County</figcaption>
+            </picture>
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/hail-on-gravel-400px.jpg" 
+                alt="A photo of hailstones on a gravel path">
+                <figcaption>Hailstones after a massive hailstorm in Fish Haven</figcaption>
+            </picture>
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/cloudy-day-with-windmills-400px.jpg" 
+                alt="A photo of windmills in a field on a blustery day">
+                <figcaption>A windy day at a field on the outskirts of Soda Springs</figcaption>
+            </picture>
+            <picture>
+                <img src="images/placeholder-400x250.jpg" data-src="images/rain-off-a-rooftop-400px.jpg" 
+                alt="A photo of rain dripping off a roof in the woods">
+                <figcaption>A gentle rainstorm in Preston</figcaption>
+            </picture>
+        </section>
+        <p>You last visited this page <span id="gallery-visited"></span> days ago.</p>
+    </main>
+
+    <footer>
+        <h3>Contact Information</h3>
+        <p>&#9993; placeholderemail@email.com</p>
+        <p>&#9742; 555-555-1234</p>
+        <div class="socialMedia">
+            <a href="https://twitter.com/?lang=en"><img src="../lesson8/images/social-twitter-75px.png" alt="Twitter logo"></a>
+            <a href="https://www.instagram.com/"><img src="../lesson8/images/social-instagram-75px.png" alt="Instagram logo"></a>
+            <a href="https://www.facebook.com/"><img src="../lesson8/images/social-facebook.png" alt="Facebook logo"></a>
+        </div>
+        <p>&#169;<span id="currentYear"></span> The Weather Corner | Attributions | Rachel Twede</p>
+        <p id="todays-date"></p>
+        <picture class="map-picture">
+            <source media="(min-width:315px) and (max-width:350px)" srcset="../lesson8/images/preston-map287px.jpg">
+            <source media="(min-width:350px)" srcset="../lesson8/images/preston-map330px.jpg">
+            <img class="map" src="../lesson8/images/preston-map255px.jpg" alt="Map of Preston, Idaho.">
+        </picture>
+    </footer>
+    <script src="../lesson6/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../lesson6/js/webfontload.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/last-visit.js"></script>
 </body>

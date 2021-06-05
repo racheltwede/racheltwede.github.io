@@ -6,6 +6,7 @@
     dark neutral: #070C0D
 */
 
+/*general styling and preston page*/
 body {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
@@ -189,4 +190,14 @@ footer div a img {
     width: 90%;
     max-width: 20.5rem;
     margin: 1rem auto 0 auto;
+}
+
+/*Gallery page*/
+
+.gallery-grid picture img {
+    max-width: 100%
+}
+
+.gallery-grid figcaption {
+    font-size: 0.9rem;
 }
