@@ -193,11 +193,24 @@ footer div a img {
 }
 
 /*Gallery page*/
-
-.gallery-grid picture img {
-    max-width: 100%
+/*.gallery-grid picture {
+    margin: 0 auto 1rem auto;
+}*/
+.gallery-grid picture {
+    display: block;
+    border: 15px solid #DFEDF2;
+    margin-bottom: 1.5rem;
 }
-
+.gallery-grid picture img {
+    width: 100%
+}
 .gallery-grid figcaption {
     font-size: 0.9rem;
+    text-align: center;
+    font-style: italic;
+    padding: 0 0.2rem 0.6rem 0.2rem;
+}
+
+#gallery-visit-p {
+    text-align: center;
 }
