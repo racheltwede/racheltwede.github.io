@@ -32,7 +32,7 @@ tr:nth-child(even) {
 thead tr:first-child th, tfoot tr td {
     background-color: #7fb9c2;
 }
-thead tr:nth-child(2) th {
+thead tr:nth-child(2) th, tbody tr:nth-child(4) td:nth-child(3) {
     background-color: #628ca6;
     color: white;
 }
@@ -45,9 +45,4 @@ tfoot tr td {
 }
 .italics {
     font-style: italic;
-}
-
-tbody tr th:hover, tbody tr td:hover {
-    background-color: #628ca6;
-    color: white;
 }
