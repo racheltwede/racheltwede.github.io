@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--change description-->
-    <meta name="description" content="A place to report sightings of storms in the "> 
+    <meta name="description" content="A place to report sightings of storms or unusual weather in Idaho's Bear Lake, Caribou, or Franklin counties."> 
     <meta name="author" content="Rachel Twede">
     <title>Storm Center — The Weather Corner</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -37,7 +36,52 @@
     </nav>
     <main>
         <h2>Storm Center</h2>
-        
+        <!--Do I need a 'title' attribute for my input elements?-->
+        <form>
+            <!--Go over the regex again... 
+                should this input field allow spaces? 
+                should I have more than one input field so the user can input more than one name without worrying about spaces?-->
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>Full Name*<input type="text" name="name" pattern="^[a-zA-Z]{5,}" required></label>
+                <label>Email<input type="email" name="email" placeholder="placeholder@gmail.com"></label>
+                <label>Phone Number*<input type="tel" name="phone" required></label>
+                <label>Zip Code*<input type="number" name="zip" id="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label>Storm Date<input type="date" name="date"></label>
+                <label>Storm Type<input list="storm-type"></label>
+                <datalist id="storm-type">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <!--Not sure I understood the instructions for the label below correctly... review again later?-->
+                <label>Storm Severity (Rate from 1 to 10)<input type="range" name="severity" min="0" max="10" value="5" 
+                    oninput="severityLabel(this.value)" onchange="severityLabel(this.value)"></label>
+                <span id="severity-value">5</span>
+                <label>Storm Region
+                    <select name="region">
+                        <option value="" disabled selected>Select Region...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                    </select>
+                </label>               
+                <span>Are you in danger?</span>
+                <label><input type="radio" name="dangerLevel" value="yes">Yes</label>
+                <label><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
+                <label><input type="radio" name="dangerLevel" value="no">No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>Type any final comments here:<textarea name="comments"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Send my Storm Report">
+        </form>
     </main>
     <footer>
         <h3>Contact Information</h3>
@@ -60,5 +104,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="../lesson6/js/webfontload.js"></script>
     <script src="../lesson7/js/lazyload.js"></script>
+    <script src="js/rangelabel.js"></script>
 </body>
 </html>
