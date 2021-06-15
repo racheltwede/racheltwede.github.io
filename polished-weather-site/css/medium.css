@@ -1,0 +1,64 @@
+/*note: 35rem at 16px base font size = 560*/
+
+/*general styling and preston page*/
+@media only screen and (min-width: 35rem) {
+    header {
+        padding: 0.65rem;
+        grid-template-columns: min-content auto;
+    }
+    .logo {
+        min-width: 7.7rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    header button {
+        display: none;
+    }
+    
+    .navigation ul, .navigation .hidden {
+        display: flex;
+        /* height: 63.188px; */
+    }
+    .navigation ul li {
+        flex: 1 1 auto;
+        align-self: center;
+        height: 100%;
+        /* height: 63.188px; */
+    }
+    .navigation ul li a {
+        border-top: none;
+        font-size: 1.2rem;
+        /*add the top padding to 1.2*16 to the bottom padding?*/
+    }
+    
+    main {
+        margin: 0 auto 1rem auto;
+        max-width: 85%;
+    }
+    .forecast-section {
+        display: block;
+    }
+
+    .article-img {
+        float: right;
+        max-width: 23rem;
+    }
+    .article-link {
+        clear: right;
+    }
+
+    /*Gallery Page*/
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .gallery-grid picture{
+        margin-bottom: 0;
+        border-width: 7px;
+    }
+}
