@@ -8,9 +8,9 @@
     <title>Storm Center — The Weather Corner</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="favorites icon" href="../idaho-favicon.ico">
-    <link rel="stylesheet" href="../lesson6/css/style.css">
-    <link rel="stylesheet" href="../lesson6/css/medium.css">
-    <link rel="stylesheet" href="../lesson6/css/large.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
     <p class="event-banner">Saturday = Preston Pancakes in the Park! <br>9:00 a.m. Saturday at the city park pavilion.</p>
@@ -27,11 +27,11 @@
     <nav class="navigation">
         <ul id="mainNav" class="hidden">
             <li><a href="#">Home</a></li>
-            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a id="location" href="#">Storm Center</a></li>
-            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -42,15 +42,15 @@
                 should I have more than one input field so the user can input more than one name without worrying about spaces?-->
             <fieldset>
                 <legend>Your Information</legend>
-                <label>Full Name*<input type="text" name="name" pattern="^[a-zA-Z]{5,}" required></label>
-                <label>Email<input type="email" name="email" placeholder="placeholder@gmail.com"></label>
-                <label>Phone Number*<input type="tel" name="phone" required></label>
-                <label>Zip Code*<input type="number" name="zip" id="zip" required></label>
+                <label>Full Name*<br><input type="text" name="name" pattern="^[a-zA-Z]{5,}" required></label><br>
+                <label>Email<br><input type="email" name="email" placeholder="placeholder@gmail.com"></label><br>
+                <label>Phone Number*<br><input type="tel" name="phone" required></label><br>
+                <label>Zip Code*<br><input type="number" name="zip" id="zip" required></label><br>
             </fieldset>
             <fieldset>
                 <legend>Storm Details</legend>
-                <label>Storm Date<input type="date" name="date"></label>
-                <label>Storm Type<input list="storm-type"></label>
+                <label>Storm Date<br><input type="date" name="date"></label><br>
+                <label>Storm Type<br><input list="storm-type"></label><br>
                 <datalist id="storm-type">
                     <option value="Flash Flood">
                     <option value="Hail">
@@ -58,25 +58,25 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-                <label>Storm Severity (Rate from 1 to 10)<input type="range" name="severity" min="0" max="10" value="5" 
+                <label>Storm Severity (Rate from 1 to 10)<br><input type="range" name="severity" min="0" max="10" value="5" 
                     oninput="severityLabel(this.value)" onchange="severityLabel(this.value)"></label>
-                <span id="severity-value">5</span>
-                <label>Storm Region
+                <span id="severity-value">5</span><br>
+                <label>Storm Region<br>
                     <select name="region">
                         <option value="" disabled selected>Select Region...</option>
                         <option value="Fish Haven">Fish Haven</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                     </select>
-                </label>               
-                <span>Are you in danger?</span>
+                </label><br>             
+                <span>Are you in danger?</span><br>
                 <label><input type="radio" name="dangerLevel" value="yes">Yes</label>
                 <label><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
                 <label><input type="radio" name="dangerLevel" value="no">No</label>
             </fieldset>
             <fieldset>
                 <legend>Additional Information</legend>
-                <label>Type any final comments here:<textarea name="comments"></textarea></label>
+                <label>Type any final comments here:<br><textarea name="comments"></textarea></label>
             </fieldset>
             <input type="submit" value="Send my Storm Report">
         </form>

@@ -1,5 +1,5 @@
 WebFont.load({
     google: {
-      families: ['PT Sans', 'Lato']
+      families: ['Lora', 'Open Sans']
     }
 });
