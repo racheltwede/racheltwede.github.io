@@ -24,12 +24,17 @@ p {
     background-color: #B9B9CC;
     padding: 0 1rem 1rem 1rem;
     margin-bottom: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards section p {
+    margin-top: 0;
 }
 img {
-    width: 15rem;
-    max-width: 100%;
+    max-width: 16rem;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
-
 }
 
 footer {
@@ -40,7 +45,11 @@ footer {
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 0.2rem;
+        column-gap: 0.2rem;
+        row-gap: 0.2rem;
+    }
+    .cards section {
+        margin-bottom: 0;
     }
 }
 
