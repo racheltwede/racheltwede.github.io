@@ -216,3 +216,18 @@ footer div a img {
 #gallery-visit-p {
     text-align: center;
 }
+
+/*Home page*/
+.wireframe-p {
+    background-color: #DFEDF2;
+    padding: 1rem;
+    text-align: center;
+}
+
+.welcome-box {
+    background-color: #DFEDF2;
+}
+
+.hero-box {
+    position: relative;
+}
