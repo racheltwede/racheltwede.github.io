@@ -14,9 +14,6 @@
 
     }
 
-    .hero-box {
-        position: relative;
-    }
     .weather-overlay {
         grid-template-columns: 1fr 1fr;
         position: absolute;
@@ -82,4 +79,7 @@
     .gallery-grid picture:hover {
         box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem #888888;
     }
+
+    /*Home Page*/
+    
 }

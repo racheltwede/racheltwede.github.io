@@ -6,6 +6,8 @@
     dark neutral: #070C0D
 */
 
+/*TODO: get rid of redundant styling affecting max-width on images*/
+
 /*general styling and preston page*/
 body {
     font-size: 16px;
@@ -23,6 +25,9 @@ a:hover {
 h1, h2, h3 {
     font-family: 'Lora', serif;
 }
+img {
+    max-width: 100%;
+}
 
 .event-banner {
     background-color: #DFEDF2;
@@ -38,11 +43,7 @@ header {
     background-color: #033E63;
     color: #DFEDF2;
 }
-.logo {
-    width: 100%;
-}
 .logo-picture {
-    width: 100%;
     height: auto;
     grid-row: 1 / 3;
     align-self: center;
@@ -108,9 +109,6 @@ main {
 }
 h2 {
     font-size: 2rem;
-}
-.hero-box picture img {
-    width: 100%;
 }
 .weather-overlay {
     display: grid;
@@ -185,7 +183,7 @@ footer a {
     display: none;
 }
 footer div a img {
-    max-width: 3rem;
+    max-width: 3rem; 
 }
 .map {
     display: block;
@@ -218,16 +216,48 @@ footer div a img {
 }
 
 /*Home page*/
+
+.hero-box {
+    position: relative;
+}
+.home-hero {
+    margin-top: 2rem;
+}
+.welcome-box {
+    background-color: #DFEDF2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.welcome-box h2 {
+    margin: 0;
+}
+
+.town-info {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.town-info div {
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.town-info div:nth-child(3) {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.town-info div h3 {
+    margin: 0;
+}
+.town-info div p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 .wireframe-p {
     background-color: #DFEDF2;
     padding: 1rem;
     text-align: center;
-}
-
-.welcome-box {
-    background-color: #DFEDF2;
-}
-
-.hero-box {
-    position: relative;
 }
