@@ -81,5 +81,15 @@
     }
 
     /*Home Page*/
-    
+    .town-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .town-info div {
+        border: none;
+    }
+    .town-info div:nth-child(3) {
+        border: none;
+    }
 }
