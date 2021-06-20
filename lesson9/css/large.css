@@ -92,4 +92,7 @@
     .town-info div:nth-child(3) {
         border: none;
     }
+    .town-info div:nth-child(odd) img, .town-info div:nth-child(even) img {
+        float: none;
+    }
 }

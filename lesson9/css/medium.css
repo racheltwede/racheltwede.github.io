@@ -60,4 +60,19 @@
         margin-bottom: 0;
         border-width: 7px;
     }
+
+    .town-info div img {
+        max-height: 10rem;
+    }
+    .town-info div:nth-child(odd) img {
+        float: left;
+    }
+
+    .town-info div:nth-child(even) img {
+        float: right;
+    }
+
+    .article-title {
+        clear: left;
+    }
 }
