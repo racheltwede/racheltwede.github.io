@@ -20,8 +20,10 @@
     }
     
     .navigation {
-        border-top: 2px solid rgba(0, 0, 0, 0.3);
-        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        border-top: 2px solid rgba(0, 0, 0, 0.4);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+        border-left: 1px solid rgba(0, 0, 0, 0.4);
+        border-right: 1px solid rgba(0, 0, 0, 0.4);
         white-space: nowrap;
     }
     .navigation ul, .navigation .hidden {
@@ -34,8 +36,8 @@
     }
     .navigation ul li a {
         border-top: none;
-        border-left: 1px solid rgba(0, 0, 0, 0.3);
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        border-left: 1px solid rgba(0, 0, 0, 0.4);
+        border-right: 1px solid rgba(0, 0, 0, 0.4);
     }
     
     main {
@@ -46,6 +48,8 @@
     .article-img {
         float: right;
         max-width: 23rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
     }
     .article-link {
         clear: right;
