@@ -1,13 +1,13 @@
 /*note: 35rem at 16px base font size = 560*/
 
-/*general styling and preston page*/
-@media only screen and (min-width: 35rem) {
+/*general styling*/
+@media only screen and (min-width: 41.87rem) {
     header {
         padding: 0.65rem;
         grid-template-columns: min-content auto;
     }
     .logo {
-        min-width: 7.7rem;
+        min-width: 5.5rem;
     }
     header h1 {
         font-size: 2.3rem;
@@ -19,35 +19,41 @@
         display: none;
     }
     
+    .navigation {
+        border-top: 2px solid rgba(0, 0, 0, 0.3);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        white-space: nowrap;
+    }
     .navigation ul, .navigation .hidden {
         display: flex;
-        /* height: 63.188px; */
     }
     .navigation ul li {
         flex: 1 1 auto;
         align-self: center;
         height: 100%;
-        /* height: 63.188px; */
     }
     .navigation ul li a {
         border-top: none;
-        /*add the top padding to 1.2*16 to the bottom padding?*/
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
     
     main {
         margin: 0 auto 1rem auto;
         max-width: 85%;
     }
-    .forecast-section {
-        display: block;
-    }
-
+    
     .article-img {
         float: right;
         max-width: 23rem;
     }
     .article-link {
         clear: right;
+    }
+
+    /*Town Pages*/
+    .forecast-section {
+        display: block;
     }
 
     /*Gallery Page*/
@@ -59,5 +65,29 @@
     .gallery-grid picture{
         margin-bottom: 0;
         border-width: 7px;
+    }
+
+    .town-info div img {
+        max-height: 10rem;
+    }
+    .town-info div:nth-child(odd) img {
+        float: left;
+    }
+
+    .town-info div:nth-child(even) img {
+        float: right;
+    }
+
+    .article-title {
+        clear: left;
+    }
+
+    /*Main Page*/
+    .welcome-box {
+        top: 50%;
+    }
+    .welcome-box h2 {
+        font-size: 2.5rem;
+        padding: 1rem 3rem;
     }
 }

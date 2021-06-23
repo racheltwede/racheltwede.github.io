@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A community website for the weather and local events of Preston, Soda Springs, and Fish Haven Idaho."> 
+    <meta name="author" content="Rachel Twede">
+    <title>The Weather Corner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="favorites icon" href="../idaho-favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <a  class="logo-picture" href="index.html">
+            <picture>
+                <source media="(min-width:325px) and (max-width:560px)" srcset="images/logo-100px.png">
+                <source media="(min-width:560px)" srcset="images/logo-125px.png">
+                <img class="logo" src="images/logo-56px.png" alt="The Weather Corner's Logo">
+            </picture>
+        </a>
+        <h1>The Weather Corner</h1>
+        <p>Weather and news for Idaho's southeast corner</p>
+        <button type="button" onclick="menuDisplay()">&#9776;</button>
+    </header>
+    <nav class="navigation">
+        <ul id="mainNav" class="hidden">
+            <li><a id="location" href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero-box">
+            <picture>
+                <source media="(min-width:320px) and (max-width:500px)" srcset="images/hill-sunrise-500px.jpg">
+                <source media="(min-width:500px) and (max-width:750px)" srcset="images/hill-sunrise-750px.jpg">
+                <source media="(min-width:750px) and (max-width:1100px)" srcset="images/hill-sunrise-1000px.jpg">
+                <source media="(min-width:1100px)" srcset="images/hill-sunrise-1300px.jpg">
+                <img class="home-hero" src="images/hill-sunrise-320px.jpg" alt="A beautiful view of Idaho hills at sunrise">
+            </picture>
+            <div class="welcome-box">
+                <h2>Welcome!</h2>
+            </div>
+        </section>
+        <p>Welcome to The Weather Corner, the official community website for Preston, Soda Springs, and Fish Haven—
+            three towns tucked into Idaho's beautiful southeastern corner. Here, you'll find information on the weather 
+            and local events for these towns, as well articles relevant to the location. The site also 
+            offers a page for reporting large storms or other weather events and a photo gallery showcasing some of the 
+            different weather conditions in the area.
+        </p>
+
+        <section class="town-info"></section>
+
+        <article>
+            <h3 class="article-title">Pioneer Day Celebrations</h3>
+            <p class="article-author">Article by Abby Johnson</p>
+            <picture>
+                <source media="(min-width:315px) and (max-width:425px)" srcset="images/pine-lake285px.jpg">
+                <source media="(min-width:425px)" srcset="images/pine-lake370px.jpg">
+                <img class="article-img" src="images/pine-lake201px.jpg" alt="Pine trees in front of a blue lake.">
+            </picture>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nostrum optio facere iure cupiditate 
+                id quia, necessitatibus minima nulla? Nesciunt aperiam placeat reprehenderit, ducimus praesentium voluptates 
+                maxime quia consequuntur minus saepe doloremque doloribus, minima exercitationem eum illum voluptatem dicta 
+                fuga quo unde sequi consequatur eveniet? Eveniet assumenda magni aperiam, similique ab iusto voluptatem 
+                perspiciatis nulla? Pariatur, suscipit aliquam corporis mollitia tempore voluptates tenetur.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nostrum optio facere iure cupiditate 
+                id quia, necessitatibus minima nulla? Nesciunt aperiam placeat reprehenderit, ducimus praesentium voluptates 
+                maxime quia consequuntur minus saepe doloremque doloribus, minima.</p>
+            <p><a class="article-link" href="#">Click to read more</a></p>
+        </article>
+    </main>
+    <p class="wireframe-p">Wireframes for this page found <a href="home-wireframes.html">here.</a></p>
+    <footer>
+        <h3>Contact Information</h3>
+        <p>&#9993; placeholderemail@email.com</p>
+        <p>&#9742; 555-555-1234</p>
+        <div class="socialMedia">
+            <a href="https://twitter.com/?lang=en"><img src="images/social-twitter-75px.png" alt="Twitter logo"></a>
+            <a href="https://www.instagram.com/"><img src="images/social-instagram-75px.png" alt="Instagram logo"></a>
+            <a href="https://www.facebook.com/"><img src="images/social-facebook.png" alt="Facebook logo"></a>
+        </div>
+        <p>&#169;<span id="currentYear"></span> The Weather Corner | Attributions | Rachel Twede</p>
+        <p id="todays-date"></p>
+        <picture class="map-picture">
+            <source media="(min-width:315px) and (max-width:350px)" srcset="images/preston-map287px.jpg">
+            <source media="(min-width:350px)" srcset="images/preston-map330px.jpg">
+            <img class="map" src="images/preston-map255px.jpg" alt="Map of Preston, Idaho.">
+        </picture>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+</html>

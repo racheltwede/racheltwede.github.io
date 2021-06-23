@@ -36,15 +36,4 @@ fetch(requestURL)
 
             document.querySelector(".town-info").appendChild(blurb);
         }
-    
-    /*const prophets = jsonObject['prophets'];
-    for (let i = 0; i < prophets.length; i++ ) {
-        card.appendChild(h2);
-        card.appendChild(birthdayPara);
-        card.appendChild(birthplacePara);
-        card.appendChild(image);
-
-        document.querySelector('div.cards').appendChild(card);
-    }
-    */
   });

@@ -13,21 +13,21 @@
         font-size: 1.2rem;
 
     }
-
-    .hero-box {
-        position: relative;
+    .logo {
+        min-width: 7.5rem;
     }
+
     .weather-overlay {
         grid-template-columns: 1fr 1fr;
         position: absolute;
-        top: 15%;
-        left: 4rem;
+        top: 12%;
+        left: 5%;
         border: 2px solid rgba(0, 0, 0, 0.3);
-        padding: 0 1rem;
-        background-color: rgba(38, 166, 209, 0.95);
+        padding: 0.75rem 0 0.5rem 1rem;
+        background-color: rgba(36, 175, 249, 0.85);
     }
     .weather-overlay h3 {
-        padding: 0.75rem 0 0.5rem 0;
+        padding: 0 0 0.5rem 0;
         margin: 0;
     }
     .weather-overlay p {
@@ -81,5 +81,21 @@
     }
     .gallery-grid picture:hover {
         box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem #888888;
+    }
+
+    /*Home Page*/
+    .town-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .town-info div {
+        border: none;
+    }
+    .town-info div:nth-child(3) {
+        border: none;
+    }
+    .town-info div:nth-child(odd) img, .town-info div:nth-child(even) img {
+        float: none;
     }
 }
