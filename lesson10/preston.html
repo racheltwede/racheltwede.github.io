@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A community webpage showing the current weather and forecast for Preston, Idaho, along with select articles and updates about the area."> 
+    <meta name="author" content="Rachel Twede">
+    <title>Preston — The Weather Corner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="favorites icon" href="../idaho-favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <p class="event-banner">Saturday = Preston Pancakes in the Park! <br>9:00 a.m. Saturday at the city park pavilion.</p>
+    <header>
+        <a  class="logo-picture" href="index.html">
+            <picture>
+                <source media="(min-width:325px) and (max-width:560px)" srcset="images/logo-100px.png">
+                <source media="(min-width:560px)" srcset="images/logo-125px.png">
+                <img class="logo" src="images/logo-56px.png" alt="The Weather Corner's Logo">
+            </picture>
+        </a>
+        <h1>The Weather Corner</h1>
+        <p>Weather and news for Idaho's southeast corner</p>
+        <button type="button" onclick="menuDisplay()">&#9776;</button>
+    </header>
+    <nav class="navigation">
+        <ul id="mainNav" class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a id="location" href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <section class="hero-box">
+            <picture>
+                <source media="(min-width:320px) and (max-width:500px)" srcset="images/hill-sunrise-500px.jpg">
+                <source media="(min-width:500px) and (max-width:750px)" srcset="images/hill-sunrise-750px.jpg">
+                <source media="(min-width:750px) and (max-width:1100px)" srcset="images/hill-sunrise-1000px.jpg">
+                <source media="(min-width:1100px)" srcset="images/hill-sunrise-1300px.jpg">
+                <img src="images/hill-sunrise-320px.jpg" alt="A beautiful view of Idaho hills at sunrise">
+            </picture>
+            <div class="weather-overlay">
+                <h3>Current Weather</h3>
+                <p class="column1">Currently:</p> <p class="column2">Sunny</p>
+                <p class="column1">High:</p> <p class="column2"><span id="temp">96</span>&#176;F</p>
+                <p class="column1">Wind chill:</p> <p class="column2"><span id="chill"></span></p>
+                <p class="column1">Humidity:</p> <p class="column2">29%</p>
+                <p class="column1">Wind speed:</p> <p class="column2"><span id="wind">3</span> mph</p>
+            </div>
+        </section>
+        <section class="forecast-section">
+            <h3>Five Day Forecast</h3>
+            <table class="forecast">
+                <tr class="forecast-days">
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                </tr>
+                <tr class="forecast-img">
+                    <td><img src="images/weather-sun-icon75.png" alt="Sunny weather"></td>
+                    <td><img src="images/weather-sun-cloud-icon75.png" alt="Partly cloudy"></td>
+                    <td><img src="images/weather-sun-icon75.png" alt="Sunny weather"></td>
+                    <td><img src="images/weather-sun-icon75.png" alt="Sunny weather"></td>
+                    <td><img src="images/weather-cloud-sun-wind-icon75.png" alt="Partial clouds and breeze"></td>
+                </tr>
+            </table>
+        </section>
+        <article>
+            <h3 class="article-title">Pioneer Day Celebrations</h3>
+            <p class="article-author">Article by Abby Johnson</p>
+            <picture>
+                <source media="(min-width:315px) and (max-width:425px)" srcset="images/pine-lake285px.jpg">
+                <source media="(min-width:425px)" srcset="images/pine-lake370px.jpg">
+                <img class="article-img" src="images/pine-lake201px.jpg" alt="Pine trees in front of a blue lake.">
+            </picture>
+            <!--Insert plausible article text-->
+            <p>
+                article max: 368
+                At 425px screen, 285
+                At 315px screen, 201
+
+                map max: 328
+                at 350: 287
+                at 315: 255
+
+                logo: 
+                at medium, 100px
+                at 325 screen, 56px
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam excepturi iste quos dolores, 
+                asperiores commodi nulla quae aliquid laboriosam ipsa consequuntur eum atque architecto aliquam 
+                distinctio adipisci odio, reprehenderit maxime quidem rem possimus. Architecto quasi nesciunt incidunt 
+                reiciendis sit, deleniti corporis minus vero autem aliquid, eum facere, aspernatur officia.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam excepturi iste quos dolores, 
+                asperiores commodi nulla quae aliquid laboriosam ipsa consequuntur eum atque architecto aliquam 
+                distinctio adipisci odio, reprehenderit maxime quidem rem possimus. Architecto quasi nesciunt incidunt 
+                reiciendis sit, deleniti corporis minus vero autem aliquid, eum facere, aspernatur officia.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam excepturi iste quos dolores, 
+                asperiores commodi nulla quae aliquid laboriosam ipsa consequuntur eum atque architecto aliquam 
+                distinctio adipisci odio, reprehenderit maxime quidem rem possimus. Architecto quasi nesciunt incidunt 
+                reiciendis sit, deleniti corporis minus vero autem aliquid, eum facere, aspernatur officia.
+            </p>
+            <p><a class="article-link" href="#">Click to read more</a></p>
+        </article>
+    </main>
+    <footer>
+        <h3>Contact Information</h3>
+        <p>&#9993; placeholderemail@email.com</p>
+        <p>&#9742; 555-555-1234</p>
+        <div class="socialMedia">
+            <a href="https://twitter.com/?lang=en"><img src="images/social-twitter-75px.png" alt="Twitter logo"></a>
+            <a href="https://www.instagram.com/"><img src="images/social-instagram-75px.png" alt="Instagram logo"></a>
+            <a href="https://www.facebook.com/"><img src="images/social-facebook.png" alt="Facebook logo"></a>
+        </div>
+        <p>&#169;<span id="currentYear"></span> The Weather Corner | Attributions | Rachel Twede</p>
+        <p id="todays-date"></p>
+        <picture class="map-picture">
+            <source media="(min-width:315px) and (max-width:350px)" srcset="images/preston-map287px.jpg">
+            <source media="(min-width:350px)" srcset="images/preston-map330px.jpg">
+            <img class="map" src="images/preston-map255px.jpg" alt="Map of Preston, Idaho.">
+        </picture>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/preston-script.js"></script>
+</body>
+</html>
