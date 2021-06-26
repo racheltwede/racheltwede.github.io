@@ -1,5 +1,6 @@
 'use strict';
 
+//updates infomation on the user's most recent visit to the gallery page
 let lastVisit = localStorage.getItem('lastVisitStored');
 let todaysDate = new Date();
 const msPerDay = 86400000;

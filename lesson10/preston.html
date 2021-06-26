@@ -15,7 +15,7 @@
 <body>
     <p class="event-banner">Saturday = Preston Pancakes in the Park! <br>9:00 a.m. Saturday at the city park pavilion.</p>
     <header>
-        <a  class="logo-picture" href="index.html">
+        <a class="logo-picture" href="index.html">
             <picture>
                 <source media="(min-width:325px) and (max-width:560px)" srcset="images/logo-100px.png">
                 <source media="(min-width:560px)" srcset="images/logo-125px.png">
@@ -48,29 +48,36 @@
             </picture>
             <div class="weather-overlay">
                 <h3>Current Weather</h3>
-                <p class="column1">Currently:</p> <p class="column2">Sunny</p>
-                <p class="column1">High:</p> <p class="column2"><span id="temp">96</span>&#176;F</p>
+                <p class="column1">Currently:</p> <p class="column2" id="curr-weather"></p>
+                <p class="column1">Temperature:</p> <p class="column2"><span id="temp"></span>&#176;F</p>
                 <p class="column1">Wind chill:</p> <p class="column2"><span id="chill"></span></p>
-                <p class="column1">Humidity:</p> <p class="column2">29%</p>
-                <p class="column1">Wind speed:</p> <p class="column2"><span id="wind">3</span> mph</p>
+                <p class="column1">Humidity:</p> <p class="column2" id="humidity"></p>
+                <p class="column1">Wind speed:</p> <p class="column2" id="wind"></p>
             </div>
         </section>
         <section class="forecast-section">
             <h3>Five Day Forecast</h3>
             <table class="forecast">
                 <tr class="forecast-days">
-                    <th>Sun</th>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
+                    <th id="day1"></th>
+                    <th id="day2"></th>
+                    <th id="day3"></th>
+                    <th id="day4"></th>
+                    <th id="day5"></th>
                 </tr>
                 <tr class="forecast-img">
-                    <td><img src="images/weather-sun-icon75.png" alt="Sunny weather"></td>
-                    <td><img src="images/weather-sun-cloud-icon75.png" alt="Partly cloudy"></td>
-                    <td><img src="images/weather-sun-icon75.png" alt="Sunny weather"></td>
-                    <td><img src="images/weather-sun-icon75.png" alt="Sunny weather"></td>
-                    <td><img src="images/weather-cloud-sun-wind-icon75.png" alt="Partial clouds and breeze"></td>
+                    <td><img id="icon1"></td>
+                    <td><img id="icon2"></td>
+                    <td><img id="icon3"></td>
+                    <td><img id="icon4"></td>
+                    <td><img id="icon5"></td>
+                </tr>
+                <tr class="forecast-temp">
+                    <td><span id="temp1"></span>&#176;F</td>
+                    <td><span id="temp2"></span>&#176;F</td>
+                    <td><span id="temp3"></span>&#176;F</td>
+                    <td><span id="temp4"></span>&#176;F</td>
+                    <td><span id="temp5"></span>&#176;F</td>
                 </tr>
             </table>
         </section>
@@ -84,18 +91,6 @@
             </picture>
             <!--Insert plausible article text-->
             <p>
-                article max: 368
-                At 425px screen, 285
-                At 315px screen, 201
-
-                map max: 328
-                at 350: 287
-                at 315: 255
-
-                logo: 
-                at medium, 100px
-                at 325 screen, 56px
-
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam excepturi iste quos dolores, 
                 asperiores commodi nulla quae aliquid laboriosam ipsa consequuntur eum atque architecto aliquam 
                 distinctio adipisci odio, reprehenderit maxime quidem rem possimus. Architecto quasi nesciunt incidunt 
@@ -123,7 +118,7 @@
             <a href="https://www.instagram.com/"><img src="images/social-instagram-75px.png" alt="Instagram logo"></a>
             <a href="https://www.facebook.com/"><img src="images/social-facebook.png" alt="Facebook logo"></a>
         </div>
-        <p>&#169;<span id="currentYear"></span> The Weather Corner | Attributions | Rachel Twede</p>
+        <p>&#169;<span id="currentYear"></span> The Weather Corner | <a href="https://openweathermap.org/">openweathermap.org</a> | Rachel Twede</p>
         <p id="todays-date"></p>
         <picture class="map-picture">
             <source media="(min-width:315px) and (max-width:350px)" srcset="images/preston-map287px.jpg">
@@ -131,9 +126,8 @@
             <img class="map" src="images/preston-map255px.jpg" alt="Map of Preston, Idaho.">
         </picture>
     </footer>
-    <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/webfontload.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/preston-script.js"></script>
 </body>
 </html>

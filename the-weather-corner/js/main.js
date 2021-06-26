@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 //js for homepage. Gets data from teacher's json file to use in the town blurb sections
 const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";

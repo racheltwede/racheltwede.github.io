@@ -1,3 +1,5 @@
+"use strict";
+
 //gets all the images with a "data-src" attribute into an array called "imagesToLoad"
 const imagesToLoad = document.querySelectorAll('img[data-src]');
 
