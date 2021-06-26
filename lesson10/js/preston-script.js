@@ -1,7 +1,7 @@
 "use strict";
 
 //gets weather info
-const townID = 5604473;
+//const townID = 5604473;
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=99adfa7e0c76ea8d2eb5fdc33937bd76";
 fetch(weatherURL)
   .then((response) => response.json())
