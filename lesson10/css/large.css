@@ -19,9 +19,10 @@
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 3rem 1.5rem 1.5rem min-content 1.5rem 1.5rem auto;
+        grid-template-rows: 3rem 1.5rem 1.5rem min-content 1.5rem 1.5rem 1.5rem auto;
         grid-column-gap: 2rem;
         white-space: nowrap;
+        padding-top: 1rem;
     }
     footer h3, footer p, footer div {
         grid-column-start: 2;
@@ -48,8 +49,9 @@
         margin-right: 0;
     }
     .map {
-       margin: 0;
-       width: 100%;
+       margin-top: 0.3rem;
+       height: 209px;
+       width: auto;
     }
 
     /*Town Pages*/
@@ -61,6 +63,7 @@
         border: 2px solid #15709F;
         padding: 0.75rem 0 0.5rem 1rem;
         background-color: rgba(36, 175, 249, 0.85);
+        box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
     }
     .weather-overlay .column1 {
         grid-column: 1 / 2;
@@ -70,7 +73,7 @@
     }
     .weather-overlay .column2 {
         grid-column: 2 / 3;
-        padding-left: 1rem;
+        padding-left: 0;
         border: none;
         background-color: transparent;
     }

@@ -142,7 +142,7 @@ footer {
     clear: right;
     background-color: #033E63;
     color: #DFEDF2;
-    padding: 1.7rem 1rem 1rem 1rem;
+    padding: 1.7rem 1rem 1.7rem 1rem;
 }
 footer h3 {
     margin: 0;
@@ -153,12 +153,24 @@ footer h3 {
     display: none;
 }
 footer div a img {
-    max-width: 3rem; 
+    max-width: 3rem;
+    margin-right: 0.5rem;
+}
+.socialMedia a img:hover {
+    box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+#openweather:link {
+    color:#81CAEF;
+}
+#openweather:visited {
+    color:#C9B6CE;
+}
+#openweather:hover {
+    color:white; /*why isn't this working?*/
 }
 .map {
     display: block;
-    width: 90%;
-    max-width: 20.5rem;
+    width: 23rem;
     margin: 1rem auto 0 auto;
     box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.6);
 }
@@ -181,7 +193,7 @@ footer div a img {
     margin-bottom: 0.5rem;
 }
 .weather-overlay p {
-    padding: 0.3rem 0 0.3rem 0.3rem;
+    padding: 0.3rem 0.8rem 0.3rem 0.3rem;
     margin: 0;
 }
 .column1 {
@@ -219,13 +231,16 @@ p.column1:nth-of-type(9), .column2:nth-of-type(10){
 }
 .forecast tr td {
     padding: 0.5rem;
+    text-align: center;
 }
 .forecast, .forecast tr, .forecast tr td {
-    border: 2px solid rgba(0, 0, 0, 0.7);
+    border: 2px solid black;
     border-collapse: collapse;
 }
 .forecast tr td img {
     max-height: 75px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /*Gallery page*/

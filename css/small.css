@@ -4,6 +4,10 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 #portal-content {
     margin: 0 auto;
     max-width: 1100px;
@@ -33,7 +37,7 @@ h1 {
 }
 
 #portal-img {
-    max-width: 325px;
+    max-height: 240px;
     margin: 1.5rem 0rem 0rem 0rem;
 }
 
