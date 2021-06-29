@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A place to report sightings of storms or unusual weather in Idaho's Bear Lake, Caribou, or Franklin counties."> 
+    <meta name="author" content="Rachel Twede">
+    <title>Storm Center — The Weather Corner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="favorites icon" href="../idaho-favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <a class="logo-picture" href="index.html">
+            <picture>
+                <source media="(min-width:325px) and (max-width:560px)" srcset="images/logo-100px.png">
+                <source media="(min-width:560px)" srcset="images/logo-125px.png">
+                <img class="logo" src="images/logo-56px.png" alt="The Weather Corner's Logo">
+            </picture>
+        </a>
+        <h1>The Weather Corner</h1>
+        <p>Weather and news for Idaho's southeast corner</p>
+        <button type="button" onclick="menuDisplay()">&#9776;</button>
+    </header>
+    <nav class="navigation">
+        <ul id="mainNav" class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a id="location" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <form>
+            <!--Go over the regex again... 
+                should this input field allow spaces? 
+                should I have more than one input field so the user can input more than one name without worrying about spaces?-->
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>Full Name*<br><input type="text" name="name" pattern="^[a-zA-Z]{5,}" required></label><br>
+                <label>Email<br><input type="email" name="email" placeholder="placeholder@gmail.com"></label><br>
+                <label>Phone Number*<br><input type="tel" name="phone" required></label><br>
+                <label>Zip Code*<br><input type="number" name="zip" id="zip" required></label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label>Storm Date<br><input type="date" name="date"></label><br>
+                <label>Storm Type<br><input list="storm-type"></label><br>
+                <datalist id="storm-type">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <label>Storm Severity (Rate from 1 to 10)<br><input type="range" name="severity" min="0" max="10" value="5" 
+                    oninput="severityLabel(this.value)" onchange="severityLabel(this.value)"></label>
+                <span id="severity-value">5</span><br>
+                <label>Storm Region<br>
+                    <select name="region">
+                        <option value="" disabled selected>Select Region...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                    </select>
+                </label><br>             
+                <span>Are you in danger?</span><br>
+                <label class="radio"><input type="radio" name="dangerLevel" value="yes">Yes</label>
+                <label class="radio"><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
+                <label class="radio"><input type="radio" name="dangerLevel" value="no">No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>Type any final comments here:<br><textarea name="comments"></textarea></label>
+            </fieldset>
+            <input class="submit" type="submit" value="Send my Storm Report">
+        </form>
+    </main>
+    <footer>
+        <h3>Contact Information</h3>
+        <p>&#9993; placeholderemail@email.com</p>
+        <p>&#9742; 555-555-1234</p>
+        <div class="socialMedia">
+            <a href="https://twitter.com/?lang=en"><img src="images/social-twitter-75px.png" alt="Twitter logo"></a>
+            <a href="https://www.instagram.com/"><img src="images/social-instagram-75px.png" alt="Instagram logo"></a>
+            <a href="https://www.facebook.com/"><img src="images/social-facebook.png" alt="Facebook logo"></a>
+        </div>
+        <p>&#169;<span id="currentYear"></span> The Weather Corner | Rachel Twede</p>
+        <p>Weather information courtesy of <a id="openweather" href="https://openweathermap.org/">OpenWeather API</a></p>
+        <p id="todays-date"></p>
+        <picture class="map-picture">
+            <source media="(min-width:315px) and (max-width:350px)" srcset="images/preston-map287px.jpg">
+            <source media="(min-width:350px)" srcset="images/preston-map330px.jpg">
+            <img class="map" src="images/preston-map255px.jpg" alt="Map of Preston, Idaho.">
+        </picture>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/stormrangelabel.js"></script>
+</body>
+</html>
