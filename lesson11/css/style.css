@@ -33,7 +33,7 @@ h3 {
     font-size: 1.25rem;
 }
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 header {
@@ -44,7 +44,7 @@ header {
     color: #DFEDF2;
 }
 .logo { 
-    max-height: 6rem;
+    max-width: 5rem;
     min-width: 3rem;
 }
 .logo-picture {
@@ -102,6 +102,9 @@ nav {
     font-size: 1.1rem;
     border-top: 2px solid rgba(0, 0, 0, 0.4);
 }
+.navigation ul li:last-child a {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
 #location {
     background-color: #DFEDF2;
     font-weight: bold;
@@ -128,8 +131,8 @@ main {
     margin-top: 0.5rem;
 }
 .article-img {
-    width: 75%;
     min-width: 10rem;
+    max-width: 27rem;
     margin: 0 auto;
     display: block;
     box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
@@ -170,7 +173,7 @@ footer div a img {
 }
 .map {
     display: block;
-    width: 23rem;
+    max-width: 23rem;
     margin: 1rem auto 0 auto;
     box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.6);
 }
@@ -238,7 +241,7 @@ p.column1:nth-of-type(9), .column2:nth-of-type(10){
     border-collapse: collapse;
 }
 .forecast tr td img {
-    max-height: 75px;
+    width: auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -248,9 +251,6 @@ p.column1:nth-of-type(9), .column2:nth-of-type(10){
     display: block;
     border: 15px solid #DFEDF2;
     margin-bottom: 1.5rem;
-}
-.gallery-grid picture img {
-    width: 100%
 }
 .gallery-grid figcaption {
     font-size: 0.9rem;
@@ -307,6 +307,7 @@ p.column1:nth-of-type(9), .column2:nth-of-type(10){
 }
 .town-info div img {
     box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
+    max-width: 27rem;
 }
 .town-info div p:nth-child(2) {
     font-style: italic;
