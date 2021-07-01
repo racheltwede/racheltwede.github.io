@@ -75,21 +75,6 @@
         border-width: 7px;
     }
 
-    .town-info div img {
-        max-width: 20rem;
-    }
-    .town-info div:nth-child(odd) img {
-        float: left;
-    }
-
-    .town-info div:nth-child(even) img {
-        float: right;
-    }
-
-    .article-title {
-        clear: left;
-    }
-
     /*Main Page*/
     .welcome-box {
         top: 50%;
@@ -97,5 +82,55 @@
     .welcome-box h2 {
         font-size: 2.5rem;
         padding: 1rem 3rem;
+    }    
+    .town-info div img {
+        max-width: 20rem;
     }
+
+    .town-info div {
+        display: grid;
+        grid-template-columns: 0.1fr 2fr 0.5fr 2fr 0.1fr;
+        grid-template-rows: 1.9em 2em 1.5em 1.5em auto;
+        grid-column-gap: 2rem;
+    }
+    .town-info div p {
+        margin: 0;
+    }
+    .town-info div:nth-child(odd) h3,  .town-info div:nth-child(odd) p {
+        grid-column: 3 / 5;
+        text-align: left;
+    }
+    .town-info div:nth-child(odd) img {
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+    }
+    .town-info div:nth-child(even) h3,  .town-info div:nth-child(even) p {
+        grid-column: 2 / 4;
+        text-align: right;
+    }
+    .town-info div:nth-child(even) img {
+        grid-column: 4 / 5;
+        grid-row: 1 / -1;
+    }
+
+
+    
+    /*
+    .town-info div:nth-child(odd) img {
+        float: left;
+    }
+    .town-info div:nth-child(even) img {
+        float: right;
+    }
+
+    .town-info div:nth-child(2) h3 {
+        clear: left;
+    }
+    .town-info div:nth-child(3) h3 {
+        clear: right;
+    }
+    .article-title {
+        clear: left;
+    }
+    */
 }

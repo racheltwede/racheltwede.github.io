@@ -303,6 +303,8 @@ p.column1:nth-of-type(9), .column2:nth-of-type(10){
 .town-info div p {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+}
+.town-info div p:first-of-type {
     font-size: 0.9rem;
 }
 .town-info div img {
