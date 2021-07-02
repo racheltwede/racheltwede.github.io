@@ -36,4 +36,4 @@ fetch(requestURL)
 
             document.querySelector(".town-info").appendChild(blurb);
         }
-  });
+    });

@@ -28,10 +28,7 @@ const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
-
     const filteredForecast = jsObject.list.filter(forecast => forecast.dt_txt.includes("18:00:00"));
-    console.log(filteredForecast);
     const imagesrc = "https://openweathermap.org/img/w/";
     for (let i = 0; i < 5; i++) {
         document.querySelector("#icon" + (i + 1)).setAttribute("src", imagesrc + filteredForecast[i].weather[0].icon + ".png");
@@ -47,3 +44,19 @@ for (let i = 0; i < 5; i++) {
     document.querySelector("#day" + (i+1)).innerHTML = days[(now.getDay() + i) % 7];
 }
 
+//add event section
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const towns = jsonObject["towns"];
+        const sodaSpringsInfo = towns.filter(town => town.name == "Soda Springs");
+
+        for (let i = 0; i < sodaSpringsInfo[0].events.length; i++) {
+            let event = document.createElement('p');
+            event.textContent = sodaSpringsInfo[0].events[i];
+            document.querySelector(".events-section").appendChild(event);
+        }
+    });
