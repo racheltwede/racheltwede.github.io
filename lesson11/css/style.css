@@ -140,6 +140,9 @@ main {
 article p {
     line-height: 1.3rem;
 }
+.italics {
+    font-style: italic;
+}
 
 footer {
     clear: right;

@@ -62,8 +62,6 @@ fetch(requestURL)
     .then(function (jsonObject) {
         const towns = jsonObject["towns"];
         const prestonInfo = towns.filter(town => town.name == "Preston");
-
-        console.log(prestonInfo);
         for (let i = 0; i < prestonInfo[0].events.length; i++) {
             let event = document.createElement('p');
             event.textContent = prestonInfo[0].events[i];
