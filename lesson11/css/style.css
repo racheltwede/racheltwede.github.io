@@ -100,10 +100,10 @@ nav {
     text-decoration: none;
     color: #070C0D;
     font-size: 1.1rem;
-    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    border-top: 2px solid #15709F;
 }
 .navigation ul li:last-child a {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #15709F;
 }
 #location {
     background-color: #DFEDF2;
@@ -230,12 +230,12 @@ footer div a img {
 }
 .forecast {
     margin: 0 auto;
+    box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 .forecast-days {
     background-color: #033E63;
     color: #DFEDF2;
 }
-/*#DFEDF2(light blue)  #24AFF9(main blue)  #033E63(dark blue) #15709F(border)*/
 .forecast tr td {
     text-align: center;
     background-color: #DFEDF2;
@@ -303,7 +303,8 @@ footer div a img {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid rgba(0, 0, 0, 0.4);
+    border: 2px solid #15709F;
+    box-shadow: 0.3rem 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 .welcome-box h2 {
     margin: 0;
@@ -317,12 +318,12 @@ footer div a img {
     margin-bottom: 2rem;
 }
 .town-info div {
-    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    border-top: 2px solid #15709F;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 .town-info div:nth-child(3) {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #15709F;
 }
 .town-info div h3 {
     margin: 0;

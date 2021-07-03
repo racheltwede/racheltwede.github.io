@@ -21,10 +21,10 @@
     }
     
     .navigation {
-        border-top: 2px solid rgba(0, 0, 0, 0.4);
-        border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-        border-left: 1px solid rgba(0, 0, 0, 0.4);
-        border-right: 1px solid rgba(0, 0, 0, 0.4);
+        border-top: 2px solid #15709F;
+        border-bottom: 2px solid #15709F;
+        border-left: 1px solid #15709F;
+        border-right: 1px solid #15709F;
         white-space: nowrap;
     }
     .navigation ul, .navigation .hidden {
@@ -37,8 +37,8 @@
     }
     .navigation ul li a {
         border-top: none;
-        border-left: 1px solid rgba(0, 0, 0, 0.4);
-        border-right: 1px solid rgba(0, 0, 0, 0.4);
+        border-left: 1px solid #15709F;
+        border-right: 1px solid #15709F;
     }
     .navigation ul li:last-child a {
         border-bottom: none;
@@ -70,7 +70,7 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
     }
-    .gallery-grid picture{
+    .gallery-grid picture {
         margin-bottom: 0;
         border-width: 7px;
     }
