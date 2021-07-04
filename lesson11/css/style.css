@@ -171,7 +171,7 @@ footer div a img {
     color:#C9B6CE;
 }
 #openweather:hover {
-    color:white; /*why isn't this working?*/
+    color:white;
 }
 .map {
     display: block;
@@ -358,7 +358,6 @@ legend {
     font-family: 'Lora', serif;
     font-size: 1.2rem;
     font-weight: bold;
-    /*border: 2px solid #15709F;*/
     background-color: #15709F;
     color: white;
     margin-bottom: 0.5rem;

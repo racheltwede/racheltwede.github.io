@@ -53,8 +53,6 @@ fetch(requestURL)
     .then(function (jsonObject) {
         const towns = jsonObject["towns"];
         const fishHavenInfo = towns.filter(town => town.name == "Fish Haven");
-
-        console.log(fishHavenInfo);
         for (let i = 0; i < fishHavenInfo[0].events.length; i++) {
             let event = document.createElement('p');
             event.textContent = fishHavenInfo[0].events[i];
