@@ -1,0 +1,21 @@
+/*main page*/
+img {
+    width: 100%
+}
+body {
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.
+.logo-picture img {
+    max-width: 5rem;
+}
+#social a img{
+    max-width: 2rem;
+}
+
+

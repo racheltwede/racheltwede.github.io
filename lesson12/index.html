@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <div class="alert"><button type="button" onclick="closeAlert()"></button></div>
+    <div class="alert"><button type="button" onclick="closeAlert()">&#10006;</button></div>
     <header>
-        <a class="logo-picture" href="index.html">
-            <picture>
-                <source media="(min-width:325px) and (max-width:560px)" srcset="">
-                <source media="(min-width:560px)" srcset="">
-                <img class="logo" src="" alt="Logo for the Orem Chamber of Commerce">
+        <a href="index.html">
+            <picture class="logo-picture">
+                <source media="(min-width:64px) and (max-width:128px)" srcset="images/logo-128.png">
+                <source media="(min-width:128px)" srcset="images/logo-256.png">
+                <img class="logo" src="images/logo-64.png" alt="Logo for the Orem Chamber of Commerce">
             </picture>
         </a>
         <h1>Orem Chamber of Commerce</h1>
@@ -28,18 +28,24 @@
             <ul>
                 <li><a>Log in</a></li>
                 <li><a>Join now!</a></li>
-                <li onclick="toggleSocial()">Social</li>,<!--should these all be buttons? Should just this one be a button?-->
+                <li onclick="toggleSocial()">Social</li><!--should these all be buttons? Should just this one be a button?-->
             </ul>
         </div>
-        <div>
-            <a><img src=""></a>
-            <a><img src=""></a>
-            <a><img src=""></a>
-            <a><img src=""></a>
+        <div id="social">
+            <a><img src="images/youtube_social_squircle_red.png"></a>
+            <a><img src="images/In-Blue-48.png"></a>
+            <a><img src="images/f_logo_RGB-Blue_58.png"></a>
+            <a><img src="images/Instagram_Glyph_Gradient_RGB.png"></a>
         </div>
     </header>
-    <nav class="nav-menu">
-
+    <nav id="nav-menu">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>Orem</a></li>
+            <li><a>Join</a></li>
+            <li><a>Directory</a></li>
+            <li><a>Contact</a></li>
+        </ul>
     </nav>
     <picture>
         <source media="(min-width:325px) and (max-width:560px)" srcset="">
@@ -93,7 +99,15 @@
         </section>
     </main>
     <footer>
-        
+        <section>
+            <h2>Contact us</h2>
+            <p>385-555-2555</p>
+            <p>info@oremcommerce.org</p>
+            <p>56 N State St, Orem, UT 84057</p>
+        </section>
+        <p>&#169;<span class="copyright-year"></span> Orem Chamber of Commerce | Rachel Twede | 
+            <a href="attributions.html">Attributions</a> | Page last modified <span class="modified"></span>
+        </p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/script.js"></script>
