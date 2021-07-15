@@ -1,0 +1,6 @@
+@media only screen and (min-width: 48rem) {
+    .events picture{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
