@@ -46,62 +46,23 @@
     </header>
     <nav class="nav-menu">
         <ul id="nav-ul" class="hidden">
-            <li><a href="index.html" id="location">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="orem.html">Orem</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a href="directory.html" id="location">Directory</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section>
-        <h2>Chamber Logo</h2>
-        <p>
-            Icon created with <a href="https://www.iconfinder.com/">iconfinder.</a> Adapted from the free
-            <a href="https://www.iconfinder.com/icons/3691812/building_hochiminh_landmark_manusoleum_icon">icon</a> by 
-            <a href="https://www.iconfinder.com/ratch0013">Eucalyp Studio.</a> Used under 
-            <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0.</a>
-        </p>
-    </section>
-    <section>
-        <h2>Site Photos</h2>
-        <h3>Banner:</h3>
-        <ul>
-            <li><a href="https://unsplash.com/photos/k_mmrjhQ4xs">Hero image</a> by Oliver Pan on Unsplash</li>
-        </ul>
-        <h3>Home:</h3>
-        <ul>
-            <li><a href="https://unsplash.com/photos/uf2nnANWa8Q">Events background image</a> by Samuel Pereira on Unsplash</li>
-        </ul>
-        <h3>Orem:</h3>
-        <ul>
-            <li><a href="https://unsplash.com/photos/-LVGOIDpZCs">Gallery photo 1</a> by Don LaVange Jr. on Unsplash</li>
-            <li><a href="https://unsplash.com/photos/7CAq6RSf2tc">Gallery photo 2</a> by Adam Thomas on Unsplash</li>
-            <li><a href="https://unsplash.com/photos/yJEt12Gjd3I">Gallery photo 3</a> by Brent Dalling on Unsplash</li>
-            <li><a href="https://www.flickr.com/photos/19779889@N00/2533739985">Gallery photo 4</a> by arbyreed on flickr,
-                 used under <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a></li>
-            <li><a href="https://commons.wikimedia.org/wiki/File:Wilkerson_Farm_in_Orem,_Utah_-_panoramio.jpg">Wilkerson Farm
-                Photo</a> by Roman Eugeniusz, used under<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
-                 via Wikimedia Commons</li>
-            <li><a href="https://picryl.com/media/telluride-power-company-olmsted-hydroelectric-plant-mouth-of-provo-river-canyon-24">
-                Historic Telluride Power Company photo.</a> Public domain photograph.
-        </ul>
+    <picture>
+        <source media="(min-width:320px) and (max-width:640px)" srcset="images/hero-640.jpg">
+        <source media="(min-width:640px) and (max-width:1000px)" srcset="images/hero-1000.jpg">
+        <source media="(min-width:1000px) and (max-width:1920px)" srcset="images/hero-1920.jpg">
+        <source media="(min-width:1920px) and (max-width:2400px)" srcset="images/hero-2400.jpg">
+        <source media="(min-width:2400px)" srcset="images/hero-4500.jpg">
+        <img class="hero-img" src="images/hero-320.jpg" alt="Utah mountains under a sunset">
+    </picture>
+    <main>
         
-    </section>
-    <section>
-        <h2>Borrowed Text and Assets</h2>
-        <h3>Company logos and text for highlighed companies from:</h3>
-        <ul>
-            <li><a href="https://www.rideuta.com/">rideuta.com</a></li>
-            <li><a href="https://www.kotm.org">kotm.org</a></li>
-            <li><a href="https://www.applespice.com/boxed-lunch-catering/">applespice.com</a></li>
-        </ul>
-        <h3>Information on Orem page from:</h3>
-        <ul>
-            <li><a href="https://www.uen.org/utah_history_encyclopedia/o/OREM.shtml">Utah History Encyclopedia</a></li>
-            <li><a href="https://www.niche.com/places-to-live/orem-utah-ut/">www.niche.com</a></li>
-
-        </ul>
-    </section>
     </main>
     <footer>
         <div class="contact-info">
@@ -118,6 +79,5 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/home.js"></script>
 </body>
 </html>

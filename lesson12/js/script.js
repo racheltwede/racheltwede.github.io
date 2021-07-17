@@ -1,11 +1,7 @@
 "use strict";
 
-function closeAlert() {
-    
-}
-
 function toggleMenu() {
-    document.querySelector("#nav-menu").classList.toggle("hidden");
+    document.querySelector("#nav-ul").classList.toggle("hidden");
 }
 
 function toggleSocial() {

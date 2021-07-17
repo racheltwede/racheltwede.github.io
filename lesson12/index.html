@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <div class="alert"><button type="button" onclick="closeAlert()">&#10006;</button></div>
+    <div id="alert" class="hidden">
+        <p class="alert-text"></p>
+        <button type="button" onclick="closeAlert()">&#10006;</button>
+    </div>
     <header>
         <a href="index.html">
             <picture class="logo-picture">
@@ -28,26 +31,26 @@
         <div class="login-div">
             <ul>
                 <li class="column2"><a>Log in</a></li>
-                <li class="column3"><a>Join us!</a></li>
+                <li class="column3"><a href="join.html">Join us!</a></li>
                 <li class="column4"onclick="toggleSocial()">Social</li><!--should these all be buttons? Should just this one be a button?-->
             </ul>
         </div>
         <div class="hidden" id="social">
             <ul>
-                <li class="column2"><a><img src="images/In-Blue-48.png"></a></li>
-                <li class="column3"><a><img src="images/youtube_social_circle_red.png"></a></li>
-                <li class="column4"><a><img src="images/f_logo_RGB-Blue_58.png"></a></li>
-                <li class="column5"><a><img src="images/Instagram_Glyph_Gradient_RGB.png"></a></li>
+                <li class="column2"><a href="https://www.linkedin.com/in/utah-valley-chamber-of-commerce-40311b14/"><img src="images/social-linkedin.png"></a></li>
+                <li class="column3"><a href="https://www.youtube.com/user/utahvalleychamber"><img src="images/social-youtube.png"></a></li>
+                <li class="column4"><a href="https://www.facebook.com/uvchamber/"><img src="images/social-facebook.png"></a></li>
+                <li class="column5"><a href="https://www.instagram.com/utah_valley_chamber/"><img src="images/social-instagram.png"></a></li>
             </ul>
         </div>
     </header>
-    <nav class="hidden" id="nav-menu">
-        <ul>
-            <li><a id="location" href="index.html">Home</a></li>
-            <li><a>Orem</a></li>
-            <li><a>Join</a></li>
-            <li><a>Directory</a></li>
-            <li><a>Contact</a></li>
+    <nav class="nav-menu">
+        <ul id="nav-ul" class="hidden">
+            <li><a href="index.html" id="location">Home</a></li>
+            <li><a href="orem.html">Orem</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <picture>
@@ -62,10 +65,12 @@
         <section class="purpose">
             <h2>A vision of the future</h2>
             <p>
-                Describe chamber's purpose. Lorem ipsum dolor sit amet. 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                The Orem Chamber of Commerce is dedicated to promoting the interests of Orem's businesses and to
+                helping our city's small businesses flourish. Not only does the Chamber offer unique opporutnities 
+                for networking and marketing, but it also gives a voice to those who need to be heard and helps to 
+                better our city's economy and culture.
             </p>
-            <a>Join today</a>
+            <a class="join" href="join.html">Join us today</a>
         </section>
         <section class="highlighted">
             <h2>Highlighted Members</h2>
@@ -107,7 +112,7 @@
                 <source media="(min-width:600px) and (max-width:768px)" srcset="images/events-768.jpg">
                 <source media="(min-width:768px) and (max-width:1200px)" srcset="images/events-1200.jpg">
                 <source media="(min-width:1200px)" srcset="images/events-1890.jpg">
-                <img class="events-img" src="images/events-440.jpg" alt="Utah mountains under a sunset">
+                <img class="events-img" src="images/events-440.jpg" alt="A speaker presenting to a large audience">
             </picture>
             <div>
                 <h2>Upcoming Events</h2>
@@ -120,9 +125,24 @@
         <section class="weather">
             <div>
                 <h2>Today's Weather</h2>
+                <p>Weather: <span id="weather"></span></p>
+                <p>Temperature: <span id="temp"></span>&#176;F</p>
+                <p>Humidity: <span id="humidity"></span></p>
             </div>
             <div>
                 <h2>Forecast</h2>
+                <table>
+                    <tr>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                    </tr>
+                    <tr>
+                        <td><span id="temp1"></span>&#176;F</td>
+                        <td><span id="temp2"></span>&#176;F</td>
+                        <td><span id="temp3"></span>&#176;F</td>
+                    </tr>
+                </table>
             </div>
         </section>
     </main>
@@ -141,5 +161,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>
