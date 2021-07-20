@@ -220,3 +220,40 @@ footer>p {
     text-align: center;
     color: white;
 }
+
+/*Orem*/
+.orem-main {
+    margin: 0 1rem;
+}
+.demographics {
+    max-width: 100%
+}
+.demographics, .demographics tr, .demographics tr td {
+    border: 1px solid #777;
+    border-collapse: collapse;
+}
+.demographics tr td, .demographics tr th {
+    padding: 5px;
+}
+.demographics tr:nth-child(odd) {
+    background-color: #B9CBCB;
+}
+.demographics tr:nth-child(even) {
+    background-color: #DCE5E5;
+}
+.demographics tr:nth-child(1).table-dark {
+    color: white;
+    background-color: #121517;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: auto min-content auto;
+    margin-top: 0;
+}
+.links ul, .links h3 {
+    grid-column: 2 / 3;
+    min-width: 190px;
+    margin-top: 0;
+}
+

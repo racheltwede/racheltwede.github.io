@@ -1,4 +1,5 @@
 @media only screen and (min-width: 27.5rem) {
+    /*27.5rem = 440px*/
     /*general styling*/
     /*header*/
     .menubutton {
@@ -32,4 +33,23 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    /*Orem*/
+    .med-table {
+        display: table;
+        margin: 1rem auto;
+    }
+    .sm-table {
+        display: none;
+    }
+    .med-table .table-dark {
+        color: white;
+        background-color: #0D4982;
+    }
+
+    .history-img {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
 }

@@ -61,7 +61,7 @@
         <source media="(min-width:2400px)" srcset="images/hero-4500.jpg">
         <img class="hero-img" src="images/hero-320.jpg" alt="Utah mountains under a sunset">
     </picture>
-    <main>
+    <main class="orem-main">
         <h2>About Orem</h2>
         <p><!--brief description/advertisement of city-->
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa corporis, ea itaque, 
@@ -75,25 +75,127 @@
             <h3>Photos</h3>
             <button type="button" onclick="scrollLeft()"><span class="material-icons">arrow_back_ios</span></button>
             <picture class="logo-picture">
-                <source media="(min-width:64px) and (max-width:128px)" srcset="">
-                <source media="(min-width:128px)" srcset="">
-                <img class="orem-gallery" src="" alt="">
+                <source media="(min-width:px) and (max-width:px)" srcset="">
+                <source media="(min-width:px) and (max-width:px)" srcset="">
+                <source media="(min-width:px) and (max-width:px)" srcset="">
+                <source media="(min-width:px)" srcset="">
+                <img class="orem-gallery" src="orem-church-240.jpg" alt="A beautiful church building">
             </picture>
             <button type="button" onclick="scrollRight()"><span class="material-icons">arrow_forward_ios</span></button>
         </section>
         <h3>Demographics</h3>
-        <table>
+        <table class="demographics med-table hidden">
+            <tr class="table-dark">
+                <th colspan="2"></th>
+                <th>2021</th>
+                <th>2010</th>
+                <th>2000</th>
+            </tr>
             <tr>
-                <th>2020</th>
+                <th class="table-dark">Population</th>
+                <td>Total population</td>
+                <td>98,624</td>
+                <td>88,722</td>
+                <td>84,324</td>
+            </tr>
+            <tr>
+                <th class="table-dark" rowspan="7">Race</th>
+                <td>White</td>
+                <td>89.57%</td>
+                <td>84.48%</td>
+                <td>90.80%</td>
+            </tr>
+            <tr>
+                <td>Asian</td>
+                <td>2.10%</td>
+                <td>1.94%</td>
+                <td>1.45%</td>
+            </tr>
+            <tr>
+                <td>Native Hawaiian & Other Pacific Islander</td>
+                <td>1.09%</td>
+                <td>1.00%</td>
+                <td>0.86%</td>
+            </tr>
+            <tr>
+                <td>American Indian & Alaska Native</td>
+                <td>0.62%</td>
+                <td>0.87%</td>
+                <td>0.73%</td>
+            </tr>
+            <tr>
+                <td>Black/African American</td>
+                <td>0.62%</td>
+                <td>0.72%</td>
+                <td>0.33%</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>2.46%</td>
+                <td>7.79%</td>
+                <td>3.64%</td>
+            </tr>
+            <tr>
+                <td>Two or More Races</td>
+                <td>3.54%</td>
+                <td>3.21%</td>
+                <td>2.18%</td>
+            </tr>
+        </table>
+        <table class="demographics sm-table">
+            <tr class="table-dark">
                 <th></th>
+                <th>2021</th>
+                <th>2010</th>
+            </tr>
+            <tr>
+                <td>Total population</td>
+                <td>98,624</td>
+                <td>88,722</td>
+            </tr>
+            <tr>
+                <td>White</td>
+                <td>89.57%</td>
+                <td>84.48%</td>
+            </tr>
+            <tr>
+                <td>Asian</td>
+                <td>2.10%</td>
+                <td>1.94%</td>
+            </tr>
+            <tr>
+                <td>Native Hawaiian & Other Pacific Islander</td>
+                <td>1.09%</td>
+                <td>1.00%</td>
+            </tr>
+            <tr>
+                <td>American Indian & Alaska Native</td>
+                <td>0.62%</td>
+                <td>0.87%</td>
+            </tr>
+            <tr>
+                <td>Black/African American</td>
+                <td>0.62%</td>
+                <td>0.72%</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>2.46%</td>
+                <td>7.79%</td>
+            </tr>
+            <tr>
+                <td>Two or More Races</td>
+                <td>3.54%</td>
+                <td>3.21%</td>
             </tr>
         </table>
         <h3>History</h3>
-        <picture class="logo-picture">
-            <source media="(min-width:64px) and (max-width:128px)" srcset="">
-            <source media="(min-width:128px)" srcset="">
-            <img class="history-photo" src="https://picryl.com/media/telluride-power-company-olmsted-hydroelectric-plant-mouth-of-provo-river-canyon-24"
-             alt="">
+        <picture>
+            <source media="(min-width:240px) and (max-width:480px)" srcset="images/orem-hist-480.jpg">
+            <source media="(min-width:480px) and (max-width:600px)" srcset="images/orem-hist-600.jpg">
+            <source media="(min-width:600px)" srcset="images/orem-hist-862.jpg">
+            <img class="history-img" src="images/orem-hist-240.jpg"
+             alt="Historical picture taken at the mouth of Provo River Canyon">
         </picture>
         <p>
             Prior to its incorporation, Orem was known as the "Provo bench," and its fertile orchards 
@@ -116,13 +218,17 @@
             typical historical development by Mormons, who were often counseled by church leaders to live in the 
             city and cultivate farmland outside its limits.
         </p>
-        <h3>Links</h3>
-        <p><a href="https://orem.org/">Official Orem Website</a></p>
-        <p><a href="https://www.oremrecreation.com/">Orem recreation website</a></p>
-        <p><a href="https://www.niche.com/places-to-live/orem-utah-ut/">niche.com review</a></p>
-        <p><a href="https://www.uvu.edu/">Utah Valley University website</a></p>
-        <p><a href="https://orem.maps.arcgis.com/apps/Shortlist/index.html?appid=043bb1f6eebe48b5ac48cabab5b008b6">
-            Map of Orem's parks</a></p>
+        <div class="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://orem.org/">Official Orem Website</a></li>
+                <li><a href="https://www.oremrecreation.com/">Orem recreation website</a></li>
+                <li><a href="https://www.niche.com/places-to-live/orem-utah-ut/">niche.com review</a></li>
+                <li><a href="https://www.uvu.edu/">Utah Valley University website</a></li>
+                <li><a href="https://orem.maps.arcgis.com/apps/Shortlist/index.html?appid=043bb1f6eebe48b5ac48cabab5b008b6">
+                    Map of Orem's parks</a></li>
+            </ul>
+        </div>
     </main>
     <footer>
         <div class="contact-info">
