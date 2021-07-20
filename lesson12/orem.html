@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <div id="alert" class="hidden">
-        <p class="alert-text"></p>
-        <button type="button" onclick="closeAlert()">&#10006;</button>
-    </div>
     <header>
         <a href="index.html">
             <picture class="logo-picture">
@@ -31,16 +27,17 @@
         <div class="login-div">
             <ul>
                 <li class="column2"><a>Log in</a></li>
-                <li class="column3"><a href="join.html">Join us!</a></li>
-                <li class="column4"onclick="toggleSocial()">Social</li><!--should these all be buttons? Should just this one be a button?-->
+                <li class="column3"><a id="join-link" href="join.html">Join us!</a></li>
+                <li class="column4"onclick="toggleSocial()">Social <span id="more">&#9660;</span>
+                    <span id="less" class="hidden">&#9650;</span></li>
             </ul>
         </div>
         <div class="hidden" id="social">
             <ul>
                 <li class="column2"><a href="https://www.linkedin.com/in/utah-valley-chamber-of-commerce-40311b14/"><img src="images/social-linkedin.png"></a></li>
                 <li class="column3"><a href="https://www.youtube.com/user/utahvalleychamber"><img src="images/social-youtube.png"></a></li>
-                <li class="column4"><a href="https://www.facebook.com/uvchamber/"><img src="images/social-facebook.png"></a></li>
-                <li class="column5"><a href="https://www.instagram.com/utah_valley_chamber/"><img src="images/social-instagram.png"></a></li>
+                <li class="column4"><a href="https://www.facebook.com/uvchamber/"><img src="images/social-facebook-32.png"></a></li>
+                <li class="column5"><a href="https://www.instagram.com/utah_valley_chamber/"><img src="images/social-instagram-32.png"></a></li>
             </ul>
         </div>
     </header>
@@ -57,31 +54,27 @@
         <source media="(min-width:320px) and (max-width:640px)" srcset="images/hero-640.jpg">
         <source media="(min-width:640px) and (max-width:1000px)" srcset="images/hero-1000.jpg">
         <source media="(min-width:1000px) and (max-width:1920px)" srcset="images/hero-1920.jpg">
-        <source media="(min-width:1920px) and (max-width:2400px)" srcset="images/hero-2400.jpg">
-        <source media="(min-width:2400px)" srcset="images/hero-4500.jpg">
+        <source media="(min-width:1920px)" srcset="images/hero-2200.jpg">
         <img class="hero-img" src="images/hero-320.jpg" alt="Utah mountains under a sunset">
     </picture>
     <main class="orem-main">
         <h2>About Orem</h2>
         <p><!--brief description/advertisement of city-->
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa corporis, ea itaque, 
-            quasi laborum molestias labore quia asperiores consequuntur expedita explicabo nam, 
-            nobis ipsam voluptatum necessitatibus. In, totam ducimus impedit ex dicta soluta consectetur 
-            rerum, modi incidunt ullam illo nemo sint dignissimos nostrum aut perferendis, consequatur 
-            exercitationem. Porro, ullam laboriosam.
+            The city of Orem, which is sometimes known by its slogan: "Family City USA," lies comfortably in the middle of Utah Valley, surrounded by picturesque 
+            mountains on ones side and Utah Lake on the other. It is currently the fifth-largest city in Utah, and is one of the 
+            major cities of the Provo-Orem, Utah Metropolitan Statistical Area. In 2010, Forbes rated Orem the fifth 
+            best place to raise a family in the United States, and niche.com calls it one of the "best places to live in Utah." 
         </p>
         <section>
-            <!--optomize photos-->
             <h3>Photos</h3>
-            <button type="button" onclick="scrollLeft()"><span class="material-icons">arrow_back_ios</span></button>
-            <picture class="logo-picture">
-                <source media="(min-width:px) and (max-width:px)" srcset="">
-                <source media="(min-width:px) and (max-width:px)" srcset="">
-                <source media="(min-width:px) and (max-width:px)" srcset="">
-                <source media="(min-width:px)" srcset="">
-                <img class="orem-gallery" src="orem-church-240.jpg" alt="A beautiful church building">
+            <!--<button type="button" onclick="scrollLeft()"><span class="material-icons">arrow_back_ios</span></button>-->
+            <picture class="orem-gallery">
+                <source media="(min-width:240px) and (max-width:480px)" srcset="images/orem-church-480.jpg">
+                <source media="(min-width:480px) and (max-width:720px)" srcset="images/orem-church-720.jpg">
+                <source media="(min-width:720px)" srcset="images/orem-church-1000.jpg">
+                <img class="orem-gallery" src="images/orem-church-240.jpg" alt="A beautiful church building">
             </picture>
-            <button type="button" onclick="scrollRight()"><span class="material-icons">arrow_forward_ios</span></button>
+            <!--<button type="button" onclick="scrollRight()"><span class="material-icons">arrow_forward_ios</span></button>-->
         </section>
         <h3>Demographics</h3>
         <table class="demographics med-table hidden">

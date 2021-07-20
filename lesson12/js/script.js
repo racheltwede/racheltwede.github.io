@@ -6,6 +6,8 @@ function toggleMenu() {
 
 function toggleSocial() {
     document.querySelector("#social").classList.toggle("hidden");
+    document.querySelector("#more").classList.toggle("hidden");
+    document.querySelector("#less").classList.toggle("hidden");
 }
 
 //updates copyright year

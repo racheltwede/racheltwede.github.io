@@ -45,6 +45,9 @@
         color: white;
         background-color: #0D4982;
     }
+    .links ul, .links h3 {
+        min-width: 220px;
+    }
 
     .history-img {
         max-width: 80%;

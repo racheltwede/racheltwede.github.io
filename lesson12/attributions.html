@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <div id="alert" class="hidden">
-        <p class="alert-text"></p>
-        <button type="button" onclick="closeAlert()">&#10006;</button>
-    </div>
     <header>
         <a href="index.html">
             <picture class="logo-picture">
@@ -31,16 +27,17 @@
         <div class="login-div">
             <ul>
                 <li class="column2"><a>Log in</a></li>
-                <li class="column3"><a href="join.html">Join us!</a></li>
-                <li class="column4"onclick="toggleSocial()">Social</li><!--should these all be buttons? Should just this one be a button?-->
+                <li class="column3"><a id="join-link" href="join.html">Join us!</a></li>
+                <li class="column4"onclick="toggleSocial()">Social <span id="more">&#9660;</span>
+                    <span id="less" class="hidden">&#9650;</span></li>
             </ul>
         </div>
         <div class="hidden" id="social">
             <ul>
                 <li class="column2"><a href="https://www.linkedin.com/in/utah-valley-chamber-of-commerce-40311b14/"><img src="images/social-linkedin.png"></a></li>
                 <li class="column3"><a href="https://www.youtube.com/user/utahvalleychamber"><img src="images/social-youtube.png"></a></li>
-                <li class="column4"><a href="https://www.facebook.com/uvchamber/"><img src="images/social-facebook.png"></a></li>
-                <li class="column5"><a href="https://www.instagram.com/utah_valley_chamber/"><img src="images/social-instagram.png"></a></li>
+                <li class="column4"><a href="https://www.facebook.com/uvchamber/"><img src="images/social-facebook-32.png"></a></li>
+                <li class="column5"><a href="https://www.instagram.com/utah_valley_chamber/"><img src="images/social-instagram-32.png"></a></li>
             </ul>
         </div>
     </header>
@@ -85,7 +82,6 @@
             <li><a href="https://picryl.com/media/telluride-power-company-olmsted-hydroelectric-plant-mouth-of-provo-river-canyon-24">
                 Historic Telluride Power Company photo.</a> Public domain photograph.
         </ul>
-        
     </section>
     <section>
         <h2>Borrowed Text and Assets</h2>
@@ -115,6 +111,7 @@
         <h2>References for information:</h2>
         <h3>Information resources for Orem page:</h3>
         <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Orem,_Utah">wikipedia.org</a></li>
             <li><a href="https://www.niche.com/places-to-live/orem-utah-ut/">www.niche.com</a></li>
             <li><a href="https://worldpopulationreview.com/us-cities/orem-ut-population">worldpopulationreview.com</a></li>
             <li><a href="http://censusviewer.com/city/UT/Orem">censusviewer.com</a></li>
