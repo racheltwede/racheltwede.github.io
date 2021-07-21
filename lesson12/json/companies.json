@@ -1,7 +1,7 @@
 {
     "companies": [
-        {"name": "Apple Spice", "logo": "lesson12/images/highlight-applespice.png", "phone": "801-224-4666", "address": "475 W 260 N, Orem UT 84057", "website": "www.applespice.com", "sitelink": "https://www.applespice.com"},
-        {"name": "Captain Electric", "logo": "/images/directory-captain.png", "phone": "801-224-1779", "address": "1510 W 400 S Suite 3, Orem UT 84058", "website": "www.captainelectricutah.com", "sitelink": "https://www.captainelectricutah.com/"},
+        {"name": "Apple Spice", "logo": "images/highlight-applespice.png", "phone": "801-224-4666", "address": "475 W 260 N, Orem UT 84057", "website": "www.applespice.com", "sitelink": "https://www.applespice.com"},
+        {"name": "Captain Electric", "logo": "images/directory-captain.png", "phone": "801-224-1779", "address": "1510 W 400 S Suite 3, Orem UT 84058", "website": "www.captainelectricutah.com", "sitelink": "https://www.captainelectricutah.com/"},
         {"name": "InfoTrax", "logo": "images/directory-infotrax.jpg", "phone": "801-431-4900", "address": "1875 S State Street Suite 3000, Orem UT 84097", "website": "www.infotraxsys.com", "sitelink": "https://www.infotraxsys.com/"},
         {"name": "Kids on the Move", "logo": "images/highlight-kotm.png", "phone": "801-221-9930 ext 0", "address": "475 West 260 North Orem UT 84057", "website": "www.kotm.org", "sitelink": "https://www.kotm.org"},
         {"name": "Landmark Catering", "logo": "images/directory-landmark.png", "phone": "801-471-2679", "address": "P.O. Box 971212, Orem UT 84097", "website": "landmarkcateringutah.com", "sitelink": "https://landmarkcateringutah.com/"},
