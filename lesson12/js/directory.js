@@ -6,23 +6,21 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.log(jsonObject); //FIXME: remove this
     const companies = jsonObject["companies"];
     for (let i = 0; i < companies.length; i++ ) {
-        let card = document.createElement("section"); //container for all
+        let card = document.createElement("section");
         let h2 = document.createElement("h2");
-        let logo = document.createElement("img"); //add href and alt attributes
-        let contactInfo = document.createElement("div") //container for following elements
+        let logo = document.createElement("img");
+        let contactInfo = document.createElement("div")
         let phone = document.createElement("p");
-        let phoneSpan = document.createElement("span"); //add class of "material-icons"
+        let phoneSpan = document.createElement("span");
         let address = document.createElement("p");
-        let addressSpan = document.createElement("span"); //add class of "material-icons"
+        let addressSpan = document.createElement("span");
         let website = document.createElement("p");
-        let websiteSpan = document.createElement("span"); //add class of "material-icons"
+        let websiteSpan = document.createElement("span");
         let websiteLink = document.createElement("a");
 
         h2.textContent = companies[i].name;
-        console.log(companies[i].logo);
         logo.setAttribute("src", companies[i].logo);
         logo.setAttribute("alt", companies[i].name + " " + logo);
 
@@ -50,6 +48,8 @@ fetch(requestURL)
         contactInfo.appendChild(phone);
         contactInfo.appendChild(address);
         contactInfo.appendChild(website);
+        contactInfo.classList.add("contact-info");
+
 
         document.querySelector("div.directory").appendChild(card);
     }
