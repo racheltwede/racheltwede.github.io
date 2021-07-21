@@ -9,7 +9,7 @@ fetch(requestURL)
     const companies = jsonObject["companies"];
     for (let i = 0; i < companies.length; i++ ) {
         let card = document.createElement("section");
-        let h2 = document.createElement("h2");
+        let h3 = document.createElement("h3");
         let logo = document.createElement("img");
         let contactInfo = document.createElement("div")
         let phone = document.createElement("p");
@@ -20,9 +20,15 @@ fetch(requestURL)
         let websiteSpan = document.createElement("span");
         let websiteLink = document.createElement("a");
 
-        h2.textContent = companies[i].name;
+        h3.textContent = companies[i].name;
         logo.setAttribute("src", companies[i].logo);
         logo.setAttribute("alt", companies[i].name + " " + logo);
+        if(companies[i].name == "Utah Transit Authority" || companies[i].name == "Apple Spice") {
+          logo.classList.add("small-logo");
+        }
+        if(companies[i].name != "Kids on the Move" && companies[i].name != "Apple Spice" && companies[i].name != "Utah Transit Authority") {
+          logo.classList.add("med-logo");
+        }
 
         phoneSpan.textContent = "phone";
         addressSpan.textContent = "location_on";
@@ -42,7 +48,7 @@ fetch(requestURL)
         phone.innerHTML = phone.innerHTML + companies[i].phone;
         address.innerHTML = address.innerHTML + companies[i].address;
 
-        card.appendChild(h2);
+        card.appendChild(h3);
         card.appendChild(logo);
         card.appendChild(contactInfo);
         contactInfo.appendChild(phone);

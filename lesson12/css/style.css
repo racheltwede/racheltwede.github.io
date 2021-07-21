@@ -280,6 +280,18 @@ footer>p {
 }
 
 /*Directory*/
+.directory-buttons {
+    display: none;
+}
+
 .directory img {
     max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+.small-logo {
+    width: 120px;
+}
+.med-logo {
+    width: 200px;
 }
