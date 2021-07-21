@@ -68,7 +68,14 @@ h1 {
     background-color: #0D4982;
     margin: 0.75rem 0 0 0;
 }
-#join-link {
+.login-div ul li button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+}
+.login-div ul li a {
     text-decoration: none;
     color: white;
 }
@@ -194,7 +201,9 @@ footer>p {
     display: block;
     text-align: center;
     margin: 0 auto;
-    background-color: #1F89F0;
+    color: white;
+    background-color: #0D4982;
+    text-decoration: none;
     padding: 0.5rem 0;
     max-width: 10rem;
     font-weight: 400;
