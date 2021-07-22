@@ -57,7 +57,14 @@ fetch(requestURL)
         contactInfo.classList.add("contact-info");
 
 
-        document.querySelector("div.directory").appendChild(card);
+        document.querySelector("#directory").appendChild(card);
     }
   });
 
+  function displayList() {
+    document.querySelector("#directory").classList.remove("directory-grid");
+  }
+  
+  function displayGrid() {
+    document.querySelector("#directory").classList.add("directory-grid");
+  }

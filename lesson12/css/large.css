@@ -1,6 +1,11 @@
 @media only screen and (min-width: 48rem) {
-    .events picture{
+    .events picture {
         max-width: 90%;
         margin: 0 auto;
+    }
+
+    /*Directory*/
+    .directory-grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

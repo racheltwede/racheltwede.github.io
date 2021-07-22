@@ -284,7 +284,19 @@ footer>p {
     display: none;
 }
 
-.directory img {
+#directory h3 {
+    margin: 1rem 0;
+}
+#directory .contact-info {
+    margin-bottom: 0.5rem;
+}
+#directory section {
+    border: 2px solid rgba(87, 86, 86, 0.2);
+    margin: 0.5rem 1rem;
+    background-color: #D0DCDC;
+    border-radius: 5px;
+}
+#directory img {
     max-width: 300px;
     margin: 0 auto;
     display: block;

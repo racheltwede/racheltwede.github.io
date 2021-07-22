@@ -62,5 +62,46 @@
     /*Directory*/
     .directory-buttons {
         display: block;
+        margin: -0.5rem auto 1rem auto;
+        max-width: 90%;
+        text-align: center;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        background-color: #0D4982;
+        color: white;
+        border-radius: 5px;
+    }
+    .directory-buttons>span {
+        display: inline-block;
+        font-size: 1.1rem;
+        position: relative;
+        bottom: 6px;
+        margin-right: 0.5rem;
+    }
+    .directory-buttons button {
+        color: #0D4982;
+        background-color: white;
+        border: 1px solid rgba(87, 86, 86, 0.2);
+        height: 2.6rem;
+        border-radius: 2.7px;
+    }
+    .directory-buttons button span.material-icons{
+        font-size: 1.7rem;
+    }
+
+    #directory section {
+        max-width: 28rem;
+        margin: 0.5rem auto;
+    }
+    
+    .directory-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .directory-grid section {
+        width: 100%;
     }
 }
