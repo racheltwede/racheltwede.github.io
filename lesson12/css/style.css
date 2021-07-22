@@ -292,7 +292,7 @@ fieldset {
 input {
     margin-bottom: 0.5rem;
 }
-.join-main {
+.main-margins {
     margin: 1rem 1rem;
 }
 .membership p {
@@ -307,6 +307,9 @@ legend {
     background-color: #0D4982;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+}
+textarea {
+    width: 215px;
 }
 
 /*Directory*/
