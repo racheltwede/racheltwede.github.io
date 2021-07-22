@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official website for the Orem, Utah Chamber of Commerce. Learn more about Orem and the Chamber, or join us now to help your business and our community thrive."> 
+    <meta name="author" content="Rachel Twede">
+    <title>Orem Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="favorites icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="alert" class="hidden">
+        <p class="alert-text"></p>
+        <button type="button" onclick="closeAlert()">&#10006;</button>
+    </div>
+    <header>
+        <a href="index.html">
+            <picture class="logo-picture">
+                <source media="(min-width:64px) and (max-width:128px)" srcset="images/logo-128.png">
+                <source media="(min-width:128px)" srcset="images/logo-256.png">
+                <img class="logo" src="images/logo-64.png" alt="Logo for the Orem Chamber of Commerce">
+            </picture>
+        </a>
+        <h1>Orem Chamber of Commerce</h1>
+        <button class="menubutton" type="button" onclick="toggleMenu()">&#9776;</button>
+        <div class="login-div">
+            <ul>
+                <li class="column2"><a href="#">Log in</a></li>
+                <li class="column3"><a href="join.html">Join us!</a></li>
+                <li class="column4"><button type="button" onclick="toggleSocial()">Social <span id="more">&#9660;</span>
+                    <span id="less" class="hidden">&#9650;</span></button></li>
+            </ul>
+        </div>
+        <div class="hidden" id="social">
+            <ul>
+                <li class="column2"><a href="https://www.linkedin.com/in/utah-valley-chamber-of-commerce-40311b14/"><img src="images/social-linkedin.png"></a></li>
+                <li class="column3"><a href="https://www.youtube.com/user/utahvalleychamber"><img src="images/social-youtube.png"></a></li>
+                <li class="column4"><a href="https://www.facebook.com/uvchamber/"><img src="images/social-facebook-32.png"></a></li>
+                <li class="column5"><a href="https://www.instagram.com/utah_valley_chamber/"><img src="images/social-instagram-32.png"></a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav-menu">
+        <ul id="nav-ul" class="hidden">
+            <li><a href="index.html" id="location">Home</a></li>
+            <li><a href="orem.html">Orem</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <picture>
+        <source media="(min-width:320px) and (max-width:640px)" srcset="images/hero-640.jpg">
+        <source media="(min-width:640px) and (max-width:1000px)" srcset="images/hero-1000.jpg">
+        <source media="(min-width:1000px) and (max-width:1920px)" srcset="images/hero-1920.jpg">
+        <source media="(min-width:1920px)" srcset="images/hero-2200.jpg">
+        <img class="hero-img" src="images/hero-320.jpg" alt="Utah mountains under a sunset">
+    </picture>
+    <main class="home-main">
+        <section class="purpose">
+            <h2>A vision of the future</h2>
+            <p>
+                The Orem Chamber of Commerce is dedicated to promoting the interests of Orem's businesses and to
+                helping our city's small businesses flourish. Not only does the Chamber offer unique opporutnities 
+                for networking and marketing, but it also gives a voice to those who need to be heard and helps to 
+                better our city's economy and culture.
+            </p>
+            <a class="join" href="join.html">Join us today</a>
+        </section>
+        <section class="highlighted">
+            <h2>Highlighted Members</h2>
+            <h3>Utah Transit Authority</h3>
+            <img src="images/highlight-uta.png" alt="UTA Logo">
+            <div class="contact-info">
+                <p class="highlight-contact"><span class="material-icons">phone</span> 801-227-8965</p>
+                <p class="highlight-contact"><span class="material-icons">location_on</span> 1110 South Geneva Rd.<br>Orem UT 84058</p>
+                <p class="highlight-contact"><span class="material-icons">web</span> <a href="https://www.rideuta.com">
+                    www.rideuta.com</a></p>
+            </div>
+            <p>Utah Transit Authority provides integrated mobility solutions to service life’s connections, 
+                improve public health and enhance quality of life.</p>
+            <hr>
+            <h3>Kids on the Move</h3>
+            <img id="kotm-logo" src="images/highlight-kotm.png" alt="Kids on the Move Logo">
+            <div class="contact-info">
+                <p class="highlight-contact"><span class="material-icons">email</span> kids@kotm.org</p>
+                <p class="highlight-contact"><span class="material-icons">phone</span> 801-221-9930 ext 0</p>
+                <p class="highlight-contact"><span class="material-icons">location_on</span> 475 West 260 North<br>Orem UT 84057</p>
+                <p class="highlight-contact"><span class="material-icons">web</span> <a href="https://www.kotm.org">
+                    www.kotm.org</a></p>
+            </div>
+            <p>Kids On The Move provides services throughout Utah to support families with young children with special needs.</p>
+            <hr>
+            <h3>Apple Spice</h3>
+            <img src="images/highlight-applespice.png" alt="Apple Spice Logo">
+            <div class="contact-info">
+                <p class="highlight-contact"><span class="material-icons">phone</span> 801-224-4666</p>
+                <p class="highlight-contact"><span class="material-icons">location_on</span> 422 West 800 North<br>Orem UT 84057</p>
+                <p class="highlight-contact"><span class="material-icons">web</span> <a href="https://www.applespice.com">
+                    www.applespice.com</a></p>
+            </div>
+            <p>When you're asked to order lunch for a few people or everyone at a big meeting, you want a fast, 
+                easy solution. At Apple Spice Catering, we offer delicious box lunches brimming with everyone's favorite foods.</p>
+        </section>
+        <section class="events">
+            <picture>
+                <source media="(min-width:600px) and (max-width:768px)" srcset="images/events-768.jpg">
+                <source media="(min-width:768px) and (max-width:1200px)" srcset="images/events-1200.jpg">
+                <source media="(min-width:1200px)" srcset="images/events-1890.jpg">
+                <img class="events-img" src="images/events-440.jpg" alt="A speaker presenting to a large audience">
+            </picture>
+            <div>
+                <h2>Upcoming Events</h2>
+                <p>Utah Lake Commission Service Project: July 31, 9AM–12PM</p>
+                <p>Orem Planet Fitness Grand Opening: August 4, 4–6PM</p>
+                <p>Speaker Series: Building Equitable Communities: Aug 11, 7–8:30PM</p>
+                <p>Annual golf tournament: August 31, 10AM–2PM</p>
+            </div>
+        </section>
+        <section class="weather">
+            <div>
+                <h2>Today's Weather</h2>
+                <p>Weather: <span id="weather"></span></p>
+                <p>Temperature: <span id="temp"></span>&#176;F</p>
+                <p>Humidity: <span id="humidity"></span></p>
+            </div>
+                <h2>Forecast</h2>
+                <table class="forecast-table">
+                    <tr>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                    </tr>
+                    <tr>
+                        <td><span id="temp1"></span>&#176;F</td>
+                        <td><span id="temp2"></span>&#176;F</td>
+                        <td><span id="temp3"></span>&#176;F</td>
+                    </tr>
+                </table>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h2>Contact us</h2>
+            <p><span class="material-icons">phone</span> 385-555-2555</p>
+            <p><span class="material-icons">email</span> info@oremcommerce.org</p>
+            <p><span class="material-icons">location_on</span> 56 North State St<br>Orem, UT 84057</p>
+        </div>
+        <p>
+            <span class="material-icons">copyright</span><span class="copyright-year"></span> 
+            Orem Chamber of Commerce | Rachel Twede | <a href="attributions.html">Attributions</a> | Page last modified 
+            <span class="modified"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

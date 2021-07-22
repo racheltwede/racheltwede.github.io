@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official website for the Orem, Utah Chamber of Commerce. Learn more about Orem and the Chamber, or join us now to help your business and our community thrive."> 
+    <meta name="author" content="Rachel Twede">
+    <title>Orem Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="favorites icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <picture class="logo-picture">
+                <source media="(min-width:64px) and (max-width:128px)" srcset="images/logo-128.png">
+                <source media="(min-width:128px)" srcset="images/logo-256.png">
+                <img class="logo" src="images/logo-64.png" alt="Logo for the Orem Chamber of Commerce">
+            </picture>
+        </a>
+        <h1>Orem Chamber of Commerce</h1>
+        <button class="menubutton" type="button" onclick="toggleMenu()">&#9776;</button>
+        <div class="login-div">
+            <ul>
+                <li class="column2"><a href="#">Log in</a></li>
+                <li class="column3"><a href="join.html">Join us!</a></li>
+                <li class="column4"><button type="button" onclick="toggleSocial()">Social <span id="more">&#9660;</span>
+                    <span id="less" class="hidden">&#9650;</span></button></li>
+            </ul>
+        </div>
+        <div class="hidden" id="social">
+            <ul>
+                <li class="column2"><a href="https://www.linkedin.com/in/utah-valley-chamber-of-commerce-40311b14/"><img src="images/social-linkedin.png"></a></li>
+                <li class="column3"><a href="https://www.youtube.com/user/utahvalleychamber"><img src="images/social-youtube.png"></a></li>
+                <li class="column4"><a href="https://www.facebook.com/uvchamber/"><img src="images/social-facebook-32.png"></a></li>
+                <li class="column5"><a href="https://www.instagram.com/utah_valley_chamber/"><img src="images/social-instagram-32.png"></a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav-menu">
+        <ul id="nav-ul" class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="orem.html">Orem</a></li>
+            <li><a href="join.html" id="location">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <picture>
+        <source media="(min-width:320px) and (max-width:640px)" srcset="images/hero-640.jpg">
+        <source media="(min-width:640px) and (max-width:1000px)" srcset="images/hero-1000.jpg">
+        <source media="(min-width:1000px) and (max-width:1920px)" srcset="images/hero-1920.jpg">
+        <source media="(min-width:1920px)" srcset="images/hero-2200.jpg">
+        <img class="hero-img" src="images/hero-320.jpg" alt="Utah mountains under a sunset">
+    </picture>
+    <main class="main-margins">
+        <h2>Thank you!</h2>
+        <p>Your application has been successfully sent. Please allow a short time for processing, after which a representative
+            will contact you with more information. Welcome to the Orem Chamber of Commerce!
+        </p>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h2>Contact us</h2>
+            <p><span class="material-icons">phone</span> 385-555-2555</p>
+            <p><span class="material-icons">email</span> info@oremcommerce.org</p>
+            <p><span class="material-icons">location_on</span> 56 North State St<br>Orem, UT 84057</p>
+        </div>
+        <p>
+            <span class="material-icons">copyright</span><span class="copyright-year"></span> 
+            Orem Chamber of Commerce | Rachel Twede | <a href="attributions.html">Attributions</a> | Page last modified 
+            <span class="modified"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+/*general styling*/
+img {
+    width: 100%
+}
+body {
+    font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+}
+h1, h2 {
+    font-family: "Encode Sans SC", sans-serif;
+    font-weight: 500;
+}
+.material-icons {
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+}
+.hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    /*fixme: not working*/
+}
+.main-margins {
+    margin: 1rem 1rem;
+}
+.contact-info {
+    display: grid;
+    grid-template-columns: auto min-content auto;
+    white-space: nowrap;
+}
+.contact-info p {
+    margin: 0.25rem 0;
+    grid-column: 2 / 3;
+}
+h2, h3 {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+.column1 {
+    grid-column-start: 1;
+}
+.column2 {
+    grid-column-start: 2;
+}
+.column3 {
+    grid-column-start: 3;
+}
+.column4 {
+    grid-column-start: 4;
+}
+.column5 {
+    grid-column-start: 5;
+}
+.row1{
+    grid-row: 1/2;
+}
+
+/*header*/
+#alert {
+    background-color: #FACE37;
+}
+header {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 5rem auto min-content;
+    grid-template-rows: min-content min-content min-content;
+    align-items: center;
+}
+h1 {
+    margin: 0 0 0 1rem;
+    font-size: 1.8rem;
+}
+.login-div, #social {
+    grid-column: 1 / -1;
+}
+.login-div ul {
+    display: grid;
+    grid-template-columns: auto 4.5rem 4.5rem 4.5rem 0.5rem auto;
+    list-style-type: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: white;
+    background-color: #0D4982;
+    margin: 0.75rem 0 0 0;
+}
+.login-div ul li button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+}
+.login-div ul li a {
+    text-decoration: none;
+    color: white;
+}
+#more, #less {
+    font-size: 7.5px;
+    position: relative;
+    bottom: 3px;
+}
+
+#social ul {
+    display: grid;
+    grid-template-columns: auto min-content min-content min-content min-content auto;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0.3rem 0;
+    column-gap: 0.3rem;
+}
+
+.logo-picture {
+    margin-left: 0.5rem;
+}
+.logo-picture img {
+    max-width: 5rem;
+    min-width: 3.5rem;
+}
+.menubutton {
+    background-color: transparent;
+    font-size: 28px;
+    border: none;
+}
+#social a img {
+    width: 2rem;
+}
+
+/*nav menu*/
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: #191E21;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    height: 2.5rem;
+    padding: 0 1rem;
+    line-height: 2.5rem;
+}
+.nav-menu ul li:hover {
+    background-color: #121517;
+}
+.nav-menu ul li a:hover {
+    color: #FACE37;
+}
+#location, #location:visited {
+    color: #1F89F0;
+}
+
+
+/*Footer*/
+footer {
+    color: white;
+    background-color: #0D4982;
+    padding: 1rem 0 0 0;
+}
+footer div h2 {
+    margin: 0 0 0.25rem 0;
+    grid-column: 2 / 3;
+}
+footer>p {
+    text-align: center;
+    background-color: #191E21;
+    padding-bottom: 0.5rem;
+    margin: 1rem 0 0 0;
+    padding: 0.25rem 1rem;
+}
+
+/*Homepage*/
+.alert {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto min-content;
+}
+#alert button {
+    height: 1.5rem;
+    border: none;
+    background-color: transparent;
+    margin-top: -5px;
+}
+#alert p {
+    margin: 0;
+}
+
+.purpose {
+    background-color: #AEBBC2;
+    padding: 0.5rem 0 1rem 0;
+}
+.purpose h2 {
+    margin-top: 0;
+}
+.purpose p {
+    margin: 1rem;
+}
+.join {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: #0D4982;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    max-width: 10rem;
+    font-weight: 400;
+}
+
+.highlighted {
+    padding: 0 1rem;
+}
+.highlighted h3 {
+    margin: 0.75rem 0;
+}
+.highlighted img {
+    max-width: 8rem;
+    display: block;
+    margin: 0 auto 0.5rem auto;
+}
+#kotm-logo {
+    max-width: 18rem;
+    padding-right: 20px;
+}
+
+.events {
+    background-color: #0D4982;
+    padding: 1rem;
+}
+.events h2 {
+    margin-top: 0.5rem;
+}
+.events picture {
+    display: none;
+}
+.events div {
+    text-align: center;
+    color: white;
+}
+
+.weather {
+    text-align: center;
+}
+.forecast-table {
+    margin: 0 auto 1rem auto;
+}
+.forecast-table tr td {
+    padding: 0.5rem 1rem;
+}
+.forecast-table, .forecast-table tr, .forecast-table td {
+    border: 1px solid #777;
+    border-collapse: collapse;
+}
+.forecast-table th {
+    color: white;
+    background-color: #0D4982;
+    padding: 0.5rem 1rem;
+}
+
+/*Orem*/
+.orem-main {
+    margin: 0 1rem;
+}
+.demographics {
+    max-width: 100%
+}
+.demographics, .demographics tr, .demographics tr td {
+    border: 1px solid #777;
+    border-collapse: collapse;
+}
+.demographics tr td, .demographics tr th {
+    padding: 5px;
+}
+.demographics tr:nth-child(odd) {
+    background-color: #B9CBCB;
+}
+.demographics tr:nth-child(even) {
+    background-color: #DCE5E5;
+}
+.demographics tr:nth-child(1).table-dark {
+    color: white;
+    background-color: #121517;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: auto min-content auto;
+    margin-top: 0;
+}
+.links h3 {
+    margin-bottom: 0.5rem;
+}
+.links ul, .links h3 {
+    grid-column: 2 / 3;
+    min-width: 190px;
+    margin-top: 0;
+}
+
+/*Join*/
+fieldset {
+    border: 2px solid rgba(87, 86, 86, 0.2);
+    background-color: #D0DCDC;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+input {
+    margin-bottom: 0.5rem;
+}
+.membership p {
+    font-weight: bold;
+}
+.radio {
+    margin-right: 1rem;
+}
+legend {
+    font-weight: bold;
+    color: white;
+    background-color: #0D4982;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+textarea {
+    width: 215px;
+}
+
+/*Directory*/
+.directory-buttons {
+    display: none;
+}
+
+#directory h3 {
+    margin: 1rem 0;
+}
+#directory .contact-info {
+    margin-bottom: 0.5rem;
+}
+#directory section {
+    border: 2px solid rgba(87, 86, 86, 0.2);
+    margin: 0.5rem 1rem;
+    background-color: #D0DCDC;
+    border-radius: 5px;
+}
+#directory img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+.small-logo {
+    width: 120px;
+}
+.med-logo {
+    width: 200px;
+}
+
+/*Contact*/
+.small-map {
+    display: block;
+    margin: 0 auto;
+}
+.med-map, .large-map {
+    display: none;
+    margin: 0 auto;
+}

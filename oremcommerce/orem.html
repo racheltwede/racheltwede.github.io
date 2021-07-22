@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official website for the Orem, Utah Chamber of Commerce. Learn more about Orem and the Chamber, or join us now to help your business and our community thrive."> 
+    <meta name="author" content="Rachel Twede">
+    <title>Orem Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="favorites icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <picture class="logo-picture">
+                <source media="(min-width:64px) and (max-width:128px)" srcset="images/logo-128.png">
+                <source media="(min-width:128px)" srcset="images/logo-256.png">
+                <img class="logo" src="images/logo-64.png" alt="Logo for the Orem Chamber of Commerce">
+            </picture>
+        </a>
+        <h1>Orem Chamber of Commerce</h1>
+        <button class="menubutton" type="button" onclick="toggleMenu()">&#9776;</button>
+        <div class="login-div">
+            <ul>
+                <li class="column2"><a href="#">Log in</a></li>
+                <li class="column3"><a href="join.html">Join us!</a></li>
+                <li class="column4"><button type="button" onclick="toggleSocial()">Social <span id="more">&#9660;</span>
+                    <span id="less" class="hidden">&#9650;</span></button></li>
+            </ul>
+        </div>
+        <div class="hidden" id="social">
+            <ul>
+                <li class="column2"><a href="https://www.linkedin.com/in/utah-valley-chamber-of-commerce-40311b14/"><img src="images/social-linkedin.png"></a></li>
+                <li class="column3"><a href="https://www.youtube.com/user/utahvalleychamber"><img src="images/social-youtube.png"></a></li>
+                <li class="column4"><a href="https://www.facebook.com/uvchamber/"><img src="images/social-facebook-32.png"></a></li>
+                <li class="column5"><a href="https://www.instagram.com/utah_valley_chamber/"><img src="images/social-instagram-32.png"></a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav-menu">
+        <ul id="nav-ul" class="hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="orem.html" id="location">Orem</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <picture>
+        <source media="(min-width:320px) and (max-width:640px)" srcset="images/hero-640.jpg">
+        <source media="(min-width:640px) and (max-width:1000px)" srcset="images/hero-1000.jpg">
+        <source media="(min-width:1000px) and (max-width:1920px)" srcset="images/hero-1920.jpg">
+        <source media="(min-width:1920px)" srcset="images/hero-2200.jpg">
+        <img class="hero-img" src="images/hero-320.jpg" alt="Utah mountains under a sunset">
+    </picture>
+    <main class="main-margins">
+        <h2>About Orem</h2>
+        <p>
+            The city of Orem, which is sometimes known by its slogan: "Family City USA," lies comfortably in the middle of Utah Valley, surrounded by picturesque 
+            mountains on ones side and Utah Lake on the other. It is currently the fifth-largest city in Utah, and is one of the 
+            major cities of the Provo-Orem, Utah Metropolitan Statistical Area. In 2010, Forbes rated Orem the fifth 
+            best place to raise a family in the United States, and niche.com calls it one of the "best places to live in Utah." 
+        </p>
+        <section>
+            <picture>
+                <source media="(min-width:240px) and (max-width:480px)" srcset="images/orem-church-480.jpg">
+                <source media="(min-width:480px) and (max-width:720px)" srcset="images/orem-church-720.jpg">
+                <source media="(min-width:720px)" srcset="images/orem-church-1000.jpg">
+                <img class="orem-photo" src="images/orem-church-240.jpg" alt="A beautiful church building">
+            </picture>
+        </section>
+        <h3>Demographics</h3>
+        <table class="demographics med-table hidden">
+            <tr class="table-dark">
+                <th colspan="2"></th>
+                <th>2021</th>
+                <th>2010</th>
+                <th>2000</th>
+            </tr>
+            <tr>
+                <th class="table-dark">Population</th>
+                <td>Total population</td>
+                <td>98,624</td>
+                <td>88,722</td>
+                <td>84,324</td>
+            </tr>
+            <tr>
+                <th class="table-dark" rowspan="7">Race</th>
+                <td>White</td>
+                <td>89.57%</td>
+                <td>84.48%</td>
+                <td>90.80%</td>
+            </tr>
+            <tr>
+                <td>Asian</td>
+                <td>2.10%</td>
+                <td>1.94%</td>
+                <td>1.45%</td>
+            </tr>
+            <tr>
+                <td>Native Hawaiian & Other Pacific Islander</td>
+                <td>1.09%</td>
+                <td>1.00%</td>
+                <td>0.86%</td>
+            </tr>
+            <tr>
+                <td>American Indian & Alaska Native</td>
+                <td>0.62%</td>
+                <td>0.87%</td>
+                <td>0.73%</td>
+            </tr>
+            <tr>
+                <td>Black/African American</td>
+                <td>0.62%</td>
+                <td>0.72%</td>
+                <td>0.33%</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>2.46%</td>
+                <td>7.79%</td>
+                <td>3.64%</td>
+            </tr>
+            <tr>
+                <td>Two or More Races</td>
+                <td>3.54%</td>
+                <td>3.21%</td>
+                <td>2.18%</td>
+            </tr>
+        </table>
+        <table class="demographics sm-table">
+            <tr class="table-dark">
+                <th></th>
+                <th>2021</th>
+                <th>2010</th>
+            </tr>
+            <tr>
+                <td>Total population</td>
+                <td>98,624</td>
+                <td>88,722</td>
+            </tr>
+            <tr>
+                <td>White</td>
+                <td>89.57%</td>
+                <td>84.48%</td>
+            </tr>
+            <tr>
+                <td>Asian</td>
+                <td>2.10%</td>
+                <td>1.94%</td>
+            </tr>
+            <tr>
+                <td>Native Hawaiian & Other Pacific Islander</td>
+                <td>1.09%</td>
+                <td>1.00%</td>
+            </tr>
+            <tr>
+                <td>American Indian & Alaska Native</td>
+                <td>0.62%</td>
+                <td>0.87%</td>
+            </tr>
+            <tr>
+                <td>Black/African American</td>
+                <td>0.62%</td>
+                <td>0.72%</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>2.46%</td>
+                <td>7.79%</td>
+            </tr>
+            <tr>
+                <td>Two or More Races</td>
+                <td>3.54%</td>
+                <td>3.21%</td>
+            </tr>
+        </table>
+        <h3>History</h3>
+        <picture>
+            <source media="(min-width:240px) and (max-width:480px)" srcset="images/orem-hist-480.jpg">
+            <source media="(min-width:480px) and (max-width:600px)" srcset="images/orem-hist-600.jpg">
+            <source media="(min-width:600px)" srcset="images/orem-hist-862.jpg">
+            <img class="orem-photo" src="images/orem-hist-240.jpg"
+             alt="Historical picture taken at the mouth of Provo River Canyon">
+        </picture>
+        <p>
+            Prior to its incorporation, Orem was known as the "Provo bench," and its fertile orchards 
+            and farmlands added to Provo's early reputation as the "Garden City of Utah." Orem was 
+            incorporated in 1919 because residents recognized the need to develop a water system for the 
+            area. Orem has little naturally occurring water, and local residents believed that Provo was 
+            unlikely to provide the public financing necessary to construct a water system. One of the first 
+            acts of the new town was to issue $110,000 in bonds to construct the water system, which solved 
+            the area's long-standing shortage of water. The new town took its name from Walter Orem, the owner 
+            of the interurban railroad that ran between Salt Lake City and Provo, in an apparent attempt to curry 
+            the favor and attract the investments of this prosperous resident of Salt Lake City.
+        </p>
+        <p>
+            Unlike many Utah towns and cities, Orem was not laid out in regular city blocks with houses 
+            clustered closely together. Instead, Orem's origins are in homesteads settled along the territorial 
+            highway (now State Street) and along other substantial arteries where area farmers built their homes 
+            and to live near their fields and orchards. As prime farmland along primary roads was taken, farms 
+            sprang up in other parts of the "bench" that is now Orem, and rural roads soon crisscrossed the area 
+            connecting the farms. This type of development, known in Utah as the "Gentile manner," differed from 
+            typical historical development by Mormons, who were often counseled by church leaders to live in the 
+            city and cultivate farmland outside its limits.
+        </p>
+        <div class="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://orem.org/">Official Orem Website</a></li>
+                <li><a href="https://www.oremrecreation.com/">Orem recreation website</a></li>
+                <li><a href="https://www.niche.com/places-to-live/orem-utah-ut/">niche.com review</a></li>
+                <li><a href="https://www.uvu.edu/">Utah Valley University website</a></li>
+                <li><a href="https://orem.maps.arcgis.com/apps/Shortlist/index.html?appid=043bb1f6eebe48b5ac48cabab5b008b6">
+                    Map of Orem's parks</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h2>Contact us</h2>
+            <p><span class="material-icons">phone</span> 385-555-2555</p>
+            <p><span class="material-icons">email</span> info@oremcommerce.org</p>
+            <p><span class="material-icons">location_on</span> 56 North State St<br>Orem, UT 84057</p>
+        </div>
+        <p>
+            <span class="material-icons">copyright</span><span class="copyright-year"></span> 
+            Orem Chamber of Commerce | Rachel Twede | <a href="attributions.html">Attributions</a> | Page last modified 
+            <span class="modified"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

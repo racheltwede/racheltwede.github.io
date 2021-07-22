@@ -1,0 +1,125 @@
+@media only screen and (min-width: 27.5rem) {
+    /*27.5rem = 440px*/
+
+    /*general styling*/
+    .main-margins {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    /*header*/
+    .menubutton {
+        display: none;
+    }
+    /*nav menu*/
+    .nav-menu {
+        white-space: nowrap;
+    }
+    .nav-menu ul, .nav-menu.hidden {
+        display: flex;
+    }
+    .nav-menu ul li, .nav-menu.hidden ul li {
+        flex: 1 1 auto;
+        align-self: center;
+        height: 100%;
+    }
+
+    /*Footer*/
+    /*Homepage*/
+    .purpose p { 
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
+    .highlighted, .weather {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .events {
+        position: relative;
+        background-color: #0D4982;
+    }
+    .events picture {
+        display: block;
+    }
+    .events div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /*Orem*/
+    .orem-photo {
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .med-table {
+        display: table;
+        margin: 1rem auto;
+    }
+    .sm-table {
+        display: none;
+    }
+    .med-table .table-dark {
+        color: white;
+        background-color: #0D4982;
+    }
+    .links ul, .links h3 {
+        min-width: 220px;
+    }
+
+    /*Directory*/
+    .directory-buttons {
+        display: block;
+        margin: -0.5rem auto 1rem auto;
+        max-width: 90%;
+        text-align: center;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        background-color: #0D4982;
+        color: white;
+        border-radius: 5px;
+    }
+    .directory-buttons>span {
+        display: inline-block;
+        font-size: 1.1rem;
+        position: relative;
+        bottom: 6px;
+        margin-right: 0.5rem;
+    }
+    .directory-buttons button {
+        color: #0D4982;
+        background-color: white;
+        border: 1px solid rgba(87, 86, 86, 0.2);
+        height: 2.6rem;
+        border-radius: 2.7px;
+    }
+    .directory-buttons button span.material-icons{
+        font-size: 1.7rem;
+    }
+
+    #directory section {
+        max-width: 28rem;
+        margin: 0.5rem auto;
+    }
+    
+    .directory-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .directory-grid section {
+        width: 100%;
+    }
+
+    /*Contact*/
+    .small-map {
+        display: none;
+    }
+    .med-map {
+        display: block;
+    }
+}
