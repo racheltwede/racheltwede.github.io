@@ -7,9 +7,16 @@
     }
 
     /*Home*/
+    .purpose p { 
+        max-width: 80%;
+    }
     .events picture {
         max-width: 90%;
         margin: 0 auto;
+    }
+    .highlighted, .weather {
+        width: 50%;
+        max-width: 35rem;
     }
 
     /*Join*/

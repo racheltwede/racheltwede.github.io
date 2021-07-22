@@ -25,8 +25,14 @@
 
     /*Footer*/
     /*Homepage*/
+    .purpose p { 
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
     .highlighted, .weather {
-        
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .events {
