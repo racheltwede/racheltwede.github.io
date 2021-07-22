@@ -1,6 +1,11 @@
 @media only screen and (min-width: 27.5rem) {
     /*27.5rem = 440px*/
+
     /*general styling*/
+    .main-margins {
+        max-width: 90%;
+        margin: 0 auto;
+    }
     /*header*/
     .menubutton {
         display: none;
@@ -17,7 +22,7 @@
         align-self: center;
         height: 100%;
     }
-    /*Main*/
+
     /*Footer*/
     /*Homepage*/
     .highlighted, .weather {
@@ -38,6 +43,11 @@
         transform: translate(-50%, -50%);
     }
     /*Orem*/
+    .orem-photo {
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
     .med-table {
         display: table;
         margin: 1rem auto;
@@ -51,12 +61,6 @@
     }
     .links ul, .links h3 {
         min-width: 220px;
-    }
-
-    .history-img {
-        max-width: 80%;
-        margin: 0 auto;
-        display: block;
     }
 
     /*Directory*/
@@ -103,5 +107,13 @@
     }
     .directory-grid section {
         width: 100%;
+    }
+
+    /*Contact*/
+    .small-map {
+        display: none;
+    }
+    .med-map {
+        display: block;
     }
 }

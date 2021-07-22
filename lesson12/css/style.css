@@ -22,6 +22,9 @@ h1, h2 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     /*fixme: not working*/
 }
+.main-margins {
+    margin: 1rem 1rem;
+}
 .contact-info {
     display: grid;
     grid-template-columns: auto min-content auto;
@@ -159,6 +162,7 @@ h1 {
     color: #1F89F0;
 }
 
+
 /*Footer*/
 footer {
     color: white;
@@ -292,9 +296,6 @@ fieldset {
 input {
     margin-bottom: 0.5rem;
 }
-.main-margins {
-    margin: 1rem 1rem;
-}
 .membership p {
     font-weight: bold;
 }
@@ -339,4 +340,14 @@ textarea {
 }
 .med-logo {
     width: 200px;
+}
+
+/*Contact*/
+.small-map {
+    display: block;
+    margin: 0 auto;
+}
+.med-map, .large-map {
+    display: none;
+    margin: 0 auto;
 }

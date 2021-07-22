@@ -1,4 +1,12 @@
 @media only screen and (min-width: 48rem) {
+    /* 24rem = 768px*/
+    
+    /*General*/
+    .main-margins {
+        max-width: 80%;
+    }
+
+    /*Home*/
     .events picture {
         max-width: 90%;
         margin: 0 auto;
@@ -25,8 +33,21 @@
         margin-bottom: 0.5rem;
     }
 
+    /*Orem*/
+    .orem-photo {
+        max-width: 60%;
+    }
+
     /*Directory*/
     .directory-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*Contact*/
+    .med-map {
+        display: none;
+    }
+    .large-map {
+        display: block;
     }
 }
