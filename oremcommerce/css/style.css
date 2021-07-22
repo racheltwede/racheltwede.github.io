@@ -60,6 +60,10 @@ h2, h3 {
     grid-row: 1/2;
 }
 
+main a {
+    color: #1F89F0;
+}
+
 /*header*/
 #alert {
     background-color: #FACE37;
@@ -177,6 +181,16 @@ footer>p {
     margin: 1rem 0 0 0;
     padding: 0.25rem 1rem;
 }
+footer p a {
+    color: #B3D6F9;
+}
+footer p a:visited {
+    color: #B9CBCB;
+}
+footer p a:hover {
+    color: #FACE37;
+}
+
 
 /*Homepage*/
 .alert {
@@ -306,6 +320,9 @@ footer>p {
 }
 
 /*Join*/
+.join-form {
+    margin-top: 1rem;
+}
 fieldset {
     border: 2px solid rgba(87, 86, 86, 0.2);
     background-color: #D0DCDC;
