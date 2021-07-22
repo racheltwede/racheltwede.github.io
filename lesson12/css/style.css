@@ -38,6 +38,24 @@ h2, h3 {
 .hidden {
     display: none;
 }
+.column1 {
+    grid-column-start: 1;
+}
+.column2 {
+    grid-column-start: 2;
+}
+.column3 {
+    grid-column-start: 3;
+}
+.column4 {
+    grid-column-start: 4;
+}
+.column5 {
+    grid-column-start: 5;
+}
+.row1{
+    grid-row: 1/2;
+}
 
 /*header*/
 #alert {
@@ -93,18 +111,6 @@ h1 {
     margin: 0.3rem 0;
     column-gap: 0.3rem;
 }
-.column2 {
-    grid-column-start: 2;
-}
-.column3 {
-    grid-column-start: 3;
-}
-.column4 {
-    grid-column-start: 4;
-}
-.column5 {
-    grid-column-start: 5;
-}
 
 .logo-picture {
     margin-left: 0.5rem;
@@ -152,9 +158,6 @@ h1 {
 #location, #location:visited {
     color: #1F89F0;
 }
-
-/*Main*/
-
 
 /*Footer*/
 footer {
@@ -277,6 +280,33 @@ footer>p {
     grid-column: 2 / 3;
     min-width: 190px;
     margin-top: 0;
+}
+
+/*Join*/
+fieldset {
+    border: 2px solid rgba(87, 86, 86, 0.2);
+    background-color: #D0DCDC;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+input {
+    margin-bottom: 0.5rem;
+}
+.join-main {
+    margin: 1rem 1rem;
+}
+.membership p {
+    font-weight: bold;
+}
+.radio {
+    margin-right: 1rem;
+}
+legend {
+    font-weight: bold;
+    color: white;
+    background-color: #0D4982;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 /*Directory*/
