@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: #030314;
-  max-width: 1280px;
+  max-width: 100vw;
   margin: 0 auto;
 }
 
@@ -716,3 +716,107 @@ footer a {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* ------------------- Responsive positioning (webview) of sun, planets, and moon ------------------- */
+
+/* Sun */
+@media only screen and (min-width: 1400px) {
+  [role=banner] {
+    background-position: 0% 90%;
+  }
+  .intro h1, .intro h2, .intro .summary {
+    margin-left: 350px;
+  }
+}
+
+/* Mercury */
+@media only screen and (min-width: 1400px) {
+  .preamble {
+    margin-right: -875px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .preamble {
+    margin-right: -1250px;
+  }
+}
+
+/* Venus */
+@media only screen and (min-width: 1400px) {
+  .explanation {
+    margin-left: -800px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .explanation {
+    margin-left: -1200px;
+  }
+}
+
+/* Earth */
+@media only screen and (min-width: 1400px) {
+  .participation {
+    margin-right: -500px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .participation {
+    margin-right: -900px;
+  }
+}
+
+/* Moon */
+@media only screen and (min-width: 1400px) {
+  .participation::after, #zen-participation p:nth-child(n+4) {
+    margin-right: -500px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .participation::after, #zen-participation p:nth-child(n+4) {
+    margin-right: 500px;
+  }
+}
+
+/* Mars */
+@media only screen and (min-width: 1400px) {
+  .benefits {
+    margin-left: -500px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .benefits {
+    margin-left: -900px;
+  }
+}
+
+/* Jupiter */
+@media only screen and (min-width: 1400px) {
+  .requirements {
+    margin-right: -700px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .requirements {
+    margin-right: -1100px;
+  }
+}
+
+/* Saturn */
+@media only screen and (min-width: 1400px) {
+  .requirements::after, #zen-requirements p:nth-child(n+5) {
+    margin-left: -1000px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .requirements::after, #zen-requirements p:nth-child(n+5) {
+    margin-left: -1600px;
+  }
+}
