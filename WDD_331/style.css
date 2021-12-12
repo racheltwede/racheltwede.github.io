@@ -127,6 +127,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-top: -45px;
+  transition: background-size 1s;
+}
+
+.preamble:hover {
+  background-size: 570px 570px;
 }
 
 .preamble p, .preamble h3 {
@@ -164,6 +169,11 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-size 1s;
+}
+
+.explanation:hover {
+  background-size: 640px 640px;
 }
 
 .explanation p, .explanation h3 {
@@ -201,6 +211,11 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-size 1s;
+}
+
+.participation:hover {
+  background-size: 550px 550px;
 }
 
 .participation p {
@@ -272,6 +287,11 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-size 1s;
+}
+
+.benefits:hover {
+  background-size: 415px 415px;
 }
 
 .benefits p, .benefits h3 {
@@ -309,6 +329,11 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-size 1s;
+}
+
+.requirements:hover {
+  background-size: 750px 750px;
 }
 
 .requirements p, .requirements h3 {
