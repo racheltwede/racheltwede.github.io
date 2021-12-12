@@ -528,6 +528,11 @@ footer a {
   font-size: 20px;
   position: relative;
   box-sizing: border-box;
+  transition: background-color 0.75s;
+}
+
+footer a:hover {
+  background-color: lightsteelblue;
 }
 
 .zen-validate-css {
